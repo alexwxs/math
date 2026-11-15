@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Year 12 — Questions and Solutions</title>
+  <link rel="stylesheet" href="/styles.css" />
+  
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+      options: { renderActions: { addMenu: [] } }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <script defer src="/app.js"></script>
+</head>
+<body class="has-toc">
+  <header class="top">
+    <a class="brand" href="/">Math</a>
+    <nav>
+      <button type="button" class="toc-toggle" aria-controls="toc-panel" aria-expanded="false">Index</button>
+      <a href="/year7/">Year 7</a>
+      <a href="/year11/">Year 11</a>
+      <a href="/year12/" aria-current="page">Year 12</a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside id="toc-panel" class="toc-panel">
+<nav class="toc" aria-label="Index"><div class="toc-head"><strong>Index</strong><div class="toc-actions"><button type="button" class="btn-text" data-action="expand-all">Expand solutions</button><button type="button" class="btn-text" data-action="collapse-all">Collapse</button></div></div><ol class="toc-list"><li class="toc-section"><a href="#vector-geometry-1">Vector Geometry (1)</a><ul><li><a href="#question-1">Question 1</a></li><li><a href="#question-2">Question 2</a></li><li><a href="#question-1-level-3">Question 1 (Level 3)</a></li><li><a href="#question-2-level-3">Question 2 (Level 3)</a></li><li><a href="#question-2-projections">Question 2 (Projections)</a></li><li><a href="#question-3">Question 3</a></li></ul></li><li class="toc-section"><a href="#calculus-of-logarithmic-function-i">Calculus of Logarithmic Function (I)</a><ul><li><a href="#exercise-1-question-1">Exercise 1 — Question 1</a></li><li><a href="#exercise-1-question-2">Exercise 1 — Question 2</a></li><li><a href="#exercise-1-question-3">Exercise 1 — Question 3</a></li><li><a href="#exercise-2-question-1">Exercise 2 — Question 1</a></li><li><a href="#exercise-3-question-1">Exercise 3 — Question 1</a></li><li><a href="#exercise-3-question-2">Exercise 3 — Question 2</a></li></ul></li><li class="toc-section"><a href="#calculus-of-logarithmic-function-ii">Calculus of Logarithmic Function (II)</a><ul><li><a href="#exercise-1-question-1-2">Exercise 1 — Question 1</a></li><li><a href="#exercise-2-question-1-2">Exercise 2 — Question 1</a></li><li><a href="#exercise-2-question-2">Exercise 2 — Question 2</a></li><li><a href="#exercise-3-question-1-2">Exercise 3 — Question 1</a></li><li><a href="#exercise-3-question-2-2">Exercise 3 — Question 2</a></li></ul></li><li class="toc-section"><a href="#calculus-of-exponential-function-i">Calculus of Exponential Function (I)</a><ul><li><a href="#exercise-1-question-1-3">Exercise 1 — Question 1</a></li><li><a href="#exercise-1-question-2-2">Exercise 1 — Question 2</a></li><li><a href="#exercise-2-question-2-2">Exercise 2 — Question 2</a></li><li><a href="#exercise-3-question-1-3">Exercise 3 — Question 1</a></li><li><a href="#exercise-3-question-2-3">Exercise 3 — Question 2</a></li></ul></li><li class="toc-section"><a href="#calculus-of-exponential-function-ii">Calculus of Exponential Function (II)</a><ul><li><a href="#exercise-1-question-1-4">Exercise 1 — Question 1</a></li><li><a href="#exercise-1-question-2-3">Exercise 1 — Question 2</a></li><li><a href="#exercise-2-question-1-3">Exercise 2 — Question 1</a></li><li><a href="#exercise-2-question-2-3">Exercise 2 — Question 2</a></li><li><a href="#exercise-3-question-1-4">Exercise 3 — Question 1</a></li></ul></li><li class="toc-section"><a href="#calculus-of-trigonometric-functions-i">Calculus of Trigonometric Functions (I)</a><ul><li><a href="#exercise-1-question-1-5">Exercise 1 — Question 1</a></li><li><a href="#exercise-1-question-2-4">Exercise 1 — Question 2</a></li><li><a href="#exercise-2-question-1-4">Exercise 2 — Question 1</a></li><li><a href="#exercise-3-question-1-5">Exercise 3 — Question 1</a></li><li><a href="#exercise-3-question-2-4">Exercise 3 — Question 2</a></li></ul></li></ol></nav>
+    </aside>
+    <main class="page year-content">
+<h1 class="doc-title" id="year-12-questions-and-solutions">Year 12 — Questions and Solutions</h1>
+<h1 class="section" id="vector-geometry-1">Vector Geometry (1)</h1>
+<h2 class="question" id="question-1">Question 1</h2>
+<aside class="question-box"><p>Use vector geometry to prove that $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>We prove the result geometrically by showing that both sides represent the same directed segment from a common starting point.</p>
+<p>Let $O$ be an origin in the plane (or in space). Represent the vectors by directed segments:</p>
+<p>$\overrightarrow{OA} = \mathbf{u}$, then $\overrightarrow{AB} = \mathbf{v}$, then $\overrightarrow{BC} = \mathbf{w}$.</p>
+<p>By the triangle law of vector addition,</p>
+<p class="display-math">$$\overrightarrow{OB} = \overrightarrow{OA} + \overrightarrow{AB} = \mathbf{u} + \mathbf{v}$$</p>
+<p class="display-math">$$\overrightarrow{OC} = \overrightarrow{OB} + \overrightarrow{BC} = (\mathbf{u} + \mathbf{v}) + \mathbf{w}$$</p>
+<p>On the other hand, the single directed segment from $A$ to $C$ is $\overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC} = \mathbf{v} + \mathbf{w}$.</p>
+<p>Applying the triangle law again from $O$ to $C$ via $A$,</p>
+<p class="display-math">$$\overrightarrow{OC} = \overrightarrow{OA} + \overrightarrow{AC} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$$</p>
+<p>Therefore both $(\mathbf{u} + \mathbf{v}) + \mathbf{w}$ and $\mathbf{u} + (\mathbf{v} + \mathbf{w})$ equal the same vector $\overrightarrow{OC}$.</p>
+<p class="display-math">$$(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$$</p>
+<p><strong>Hence vector addition is associative.</strong></p>
+<figure class="figure"><img src="/year12/media/vg1_q1_associative.png" alt="Geometric proof of associativity of vector addition" loading="lazy" /></figure>
+<p>The same argument works in three dimensions: the construction uses only the triangle law along a broken line of directed segments, which is valid in space.</p></div></details>
+<h2 class="question" id="question-2">Question 2</h2>
+<aside class="question-box"><p>(a) Use a diagram to show that the distances from the vector $\mathbf{u} = (x_0, y_0, z_0)$ to the $x$-$y$, $y$-$z$ and $x$-$z$ planes are $z_0$, $x_0$ and $y_0$ respectively.</p><p>(b) If $\alpha$, $\beta$, $\gamma$ are the angles that the vector $\mathbf{u} = (x_0, y_0, z_0)$ makes with the positive $x$, $y$ and $z$-axes respectively, prove that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Identify the tip of $\mathbf{u}$ with the point $P(x_0,y_0,z_0)$ in $xyz$-space (taking the common initial point of position vectors as the origin $O$).</p>
+<p>The coordinate planes and the perpendicular distances from $P$ to them are:</p>
+<p>• $x$-$y$ plane: $z = 0$. The foot of the perpendicular from $P$ is $(x_0,y_0,0)$, so the distance is $|z_0|$. (In the usual first-octant diagram one writes this as $z_0$.)</p>
+<p>• $y$-$z$ plane: $x = 0$. The foot is $(0,y_0,z_0)$, so the distance is $|x_0|$ (shown as $x_0$).</p>
+<p>• $x$-$z$ plane: $y = 0$. The foot is $(x_0,0,z_0)$, so the distance is $|y_0|$ (shown as $y_0$).</p>
+<figure class="figure"><img src="/year12/media/vg1_q2_planes.png" alt="Distances from u to the coordinate planes" loading="lazy" /></figure>
+<p>Thus the distances from $\mathbf{u} = (x_0,y_0,z_0)$ to the $x$-$y$, $y$-$z$ and $x$-$z$ planes are $z_0$, $x_0$ and $y_0$ respectively.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $|\mathbf{u}| = r = \sqrt{x_0^2 + y_0^2 + z_0^2}$ (assume $\mathbf{u} \neq \mathbf{0}$).</p>
+<p>By definition of the direction angles,</p>
+<p class="display-math">$$\cos\alpha = \dfrac{x_0}{r},\qquad \cos\beta = \dfrac{y_0}{r},\qquad \cos\gamma = \dfrac{z_0}{r}$$</p>
+<p>Therefore</p>
+<p class="display-math">$$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \dfrac{x_0^2}{r^2} + \dfrac{y_0^2}{r^2} + \dfrac{z_0^2}{r^2} = \dfrac{x_0^2 + y_0^2 + z_0^2}{r^2} = \dfrac{r^2}{r^2} = 1$$</p>
+<p><strong>Hence $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.</strong></p></div></details>
+<h2 class="question" id="question-1-level-3">Question 1 (Level 3)</h2>
+<aside class="question-box"><p>The points $A$, $B$, $C$ and $D$ form a parallelogram, where $A = \begin{pmatrix}-1\\2\\1\end{pmatrix}$, $B = \begin{pmatrix}-3\\5\\2\end{pmatrix}$ and $C = \begin{pmatrix}1\\3\\4\end{pmatrix}$. Find the possible position vectors of $D$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The order of the vertices is not specified, so any one of $A$, $B$ or $C$ may be opposite $D$. Equivalently, the midpoint of one of the segments $AB$, $AC$ or $BC$ is also the midpoint of the other diagonal.</p>
+<p><strong>Case 1:</strong> $AB$ and $CD$ are diagonals (so $C$ and $D$ complete with midpoint of $AB$).</p>
+<p class="display-math">$$\dfrac{A+B}{2} = \dfrac{C+D}{2} \Rightarrow D = A + B - C$$</p>
+<p class="display-math">$$D = \begin{pmatrix}-1\\2\\1\end{pmatrix} + \begin{pmatrix}-3\\5\\2\end{pmatrix} - \begin{pmatrix}1\\3\\4\end{pmatrix} = \begin{pmatrix}-5\\4\\-1\end{pmatrix}$$</p>
+<p><strong>Case 2:</strong> $AC$ and $BD$ are diagonals.</p>
+<p class="display-math">$$\dfrac{A+C}{2} = \dfrac{B+D}{2} \Rightarrow D = A + C - B$$</p>
+<p class="display-math">$$D = \begin{pmatrix}-1\\2\\1\end{pmatrix} + \begin{pmatrix}1\\3\\4\end{pmatrix} - \begin{pmatrix}-3\\5\\2\end{pmatrix} = \begin{pmatrix}3\\0\\3\end{pmatrix}$$</p>
+<p><strong>Case 3:</strong> $BC$ and $AD$ are diagonals.</p>
+<p class="display-math">$$\dfrac{B+C}{2} = \dfrac{A+D}{2} \Rightarrow D = B + C - A$$</p>
+<p class="display-math">$$D = \begin{pmatrix}-3\\5\\2\end{pmatrix} + \begin{pmatrix}1\\3\\4\end{pmatrix} - \begin{pmatrix}-1\\2\\1\end{pmatrix} = \begin{pmatrix}-1\\6\\5\end{pmatrix}$$</p>
+<p><strong>Answer:</strong> the possible position vectors of $D$ are $\begin{pmatrix}-5\\4\\-1\end{pmatrix}$, $\begin{pmatrix}3\\0\\3\end{pmatrix}$ and $\begin{pmatrix}-1\\6\\5\end{pmatrix}$.</p></div></details>
+<h2 class="question" id="question-2-level-3">Question 2 (Level 3)</h2>
+<aside class="question-box"><figure class="figure"><img src="/year12/media/vg1_q2_level3.png" alt="Quadrilateral OAYB with diagonals AB and OY meeting at X" loading="lazy" /></figure><p>In the diagram, $\overrightarrow{OA} = 3\mathbf{a}$, $\overrightarrow{OB} = 6\mathbf{b}$ and $\overrightarrow{YB} = 5\mathbf{a} - \mathbf{b}$.</p><p>(a) Express $\overrightarrow{AB}$ and $\overrightarrow{OY}$ in terms of $\mathbf{a}$ and $\mathbf{b}$.</p><p>(b) Find the ratio in which $X$ divides $AB$ and $OY$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Take $O$ as the origin, so the position vectors are $\mathbf{A} = 3\mathbf{a}$ and $\mathbf{B} = 6\mathbf{b}$.</p>
+<p>Since $\overrightarrow{YB} = \mathbf{B} - \mathbf{Y} = 5\mathbf{a} - \mathbf{b}$,</p>
+<p class="display-math">$$\mathbf{Y} = \mathbf{B} - (5\mathbf{a} - \mathbf{b}) = 6\mathbf{b} - 5\mathbf{a} + \mathbf{b} = -5\mathbf{a} + 7\mathbf{b}$$</p>
+<p class="display-math">$$\overrightarrow{AB} = \mathbf{B} - \mathbf{A} = 6\mathbf{b} - 3\mathbf{a} = -3\mathbf{a} + 6\mathbf{b}$$</p>
+<p class="display-math">$$\overrightarrow{OY} = \mathbf{Y} = -5\mathbf{a} + 7\mathbf{b}$$</p>
+<p><strong>Answer:</strong> $\overrightarrow{AB} = -3\mathbf{a} + 6\mathbf{b}$, $\overrightarrow{OY} = -5\mathbf{a} + 7\mathbf{b}$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $X$ divide $AB$ in the ratio $\lambda : 1$, so $\overrightarrow{AX}:\overrightarrow{XB} = \lambda:1$. Then</p>
+<p class="display-math">$$\mathbf{X} = \dfrac{\mathbf{A} + \lambda\mathbf{B}}{\lambda + 1} = \dfrac{3\mathbf{a} + 6\lambda\mathbf{b}}{\lambda + 1}$$</p>
+<p>Let $X$ also divide $OY$ in the ratio $\mu : 1$, so $\overrightarrow{OX}:\overrightarrow{XY} = \mu:1$. Then</p>
+<p class="display-math">$$\mathbf{X} = \dfrac{\mu\mathbf{Y}}{\mu + 1} = \dfrac{\mu(-5\mathbf{a} + 7\mathbf{b})}{\mu + 1}$$</p>
+<p>Equating coefficients of $\mathbf{a}$ and $\mathbf{b}$ (assuming $\mathbf{a}$, $\mathbf{b}$ independent),</p>
+<p class="display-math">$$\dfrac{3}{\lambda + 1} = \dfrac{-5\mu}{\mu + 1}, \qquad \dfrac{6\lambda}{\lambda + 1} = \dfrac{7\mu}{\mu + 1}$$</p>
+<p>From the second equation,</p>
+<p class="display-math">$$6\lambda(\mu + 1) = 7\mu(\lambda + 1) \Rightarrow 6\lambda - 7\mu = \lambda\mu$$</p>
+<p class="display-math">$$\lambda = \dfrac{7\mu}{6 - \mu}$$</p>
+<p>Substitute into the first equation:</p>
+<p class="display-math">$$3(\mu + 1) = -5\mu(\lambda + 1)$$</p>
+<p class="display-math">$$3 + 8\mu = -5\lambda\mu$$</p>
+<p class="display-math">$$3 + 8\mu = -5\mu\cdot\dfrac{7\mu}{6 - \mu} = \dfrac{-35\mu^2}{6 - \mu}$$</p>
+<p class="display-math">$$(3 + 8\mu)(6 - \mu) = -35\mu^2$$</p>
+<p class="display-math">$$18 + 48\mu - 3\mu - 8\mu^2 = -35\mu^2$$</p>
+<p class="display-math">$$27\mu^2 + 45\mu + 18 = 0$$</p>
+<p class="display-math">$$3\mu^2 + 5\mu + 2 = 0 \Rightarrow (3\mu + 2)(\mu + 1) = 0$$</p>
+<p>So $\mu = -1$ (invalid, since $\mu + 1 = 0$) or $\mu = -\dfrac{2}{3}$.</p>
+<p class="display-math">$$\lambda = \dfrac{7(-\tfrac{2}{3})}{6 - (-\tfrac{2}{3})} = \dfrac{-\tfrac{14}{3}}{\tfrac{20}{3}} = -\dfrac{7}{10}$$</p>
+<p>Hence $X$ divides $AB$ in the ratio $\overrightarrow{AX}:\overrightarrow{XB} = -7:10$ (i.e. externally in the ratio $7:10$), and divides $OY$ in the ratio $\overrightarrow{OX}:\overrightarrow{XY} = -2:3$ (externally in the ratio $2:3$).</p>
+<p><strong>Answer:</strong> $X$ divides $AB$ in the ratio $7:10$ externally, and divides $OY$ in the ratio $2:3$ externally.</p></div></details>
+<h2 class="question" id="question-2-projections">Question 2 (Projections)</h2>
+<aside class="question-box"><p>Given nonzero vectors $\mathbf{u}$ and $\mathbf{v}$ in $\mathbb{R}^2$, prove the following identities using a geometric argument:</p><p>(i) $\mathrm{proj}_{\mathbf{u}}(-\mathbf{v}) = -\mathrm{proj}_{\mathbf{u}}(\mathbf{v})$</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (i)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><figure class="figure"><img src="/year12/media/vg1_q2_proj.png" alt="Geometric comparison of proj_u(v) and proj_u(-v)" loading="lazy" /></figure>
+<p>Recall that $\mathrm{proj}_{\mathbf{u}}(\mathbf{v})$ is the vector along the line through $\mathbf{u}$ obtained by dropping a perpendicular from the tip of $\mathbf{v}$ onto that line.</p>
+<p>Replace $\mathbf{v}$ by $-\mathbf{v}$. The tip of $-\mathbf{v}$ is the point diametrically opposite the tip of $\mathbf{v}$ through the common initial point. The perpendicular from the tip of $-\mathbf{v}$ to the line of $\mathbf{u}$ therefore meets that line at the point opposite $\mathrm{proj}_{\mathbf{u}}(\mathbf{v})$ with respect to the origin.</p>
+<p>Hence the projected vector is exactly the negative of $\mathrm{proj}_{\mathbf{u}}(\mathbf{v})$:</p>
+<p class="display-math">$$\mathrm{proj}_{\mathbf{u}}(-\mathbf{v}) = -\mathrm{proj}_{\mathbf{u}}(\mathbf{v})$$</p>
+<p>(Algebraically the same conclusion follows from $\mathrm{proj}_{\mathbf{u}}(\mathbf{v})=\dfrac{\mathbf{v}\cdot\mathbf{u}}{\mathbf{u}\cdot\mathbf{u}}\mathbf{u}$, since $(-\mathbf{v})\cdot\mathbf{u}=-(\mathbf{v}\cdot\mathbf{u})$, but the question asks for a geometric argument.)</p></div></details>
+<h2 class="question" id="question-3">Question 3</h2>
+<aside class="question-box"><p>Use vector methods to prove Pythagoras' theorem.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><figure class="figure"><img src="/year12/media/vg1_q3_pythagoras.png" alt="Right triangle with vectors a, b, c for Pythagoras proof" loading="lazy" /></figure>
+<p>Let $\triangle ABC$ be right-angled at $C$. Write $\mathbf{a}=\overrightarrow{CA}$ and $\mathbf{b}=\overrightarrow{CB}$, and let $\mathbf{c}=\overrightarrow{AB}$.</p>
+<p>Then $\mathbf{c}=\mathbf{b}-\mathbf{a}$, and since $\angle C=90^\circ$ the sides $CA$ and $CB$ are perpendicular, so</p>
+<p class="display-math">$$\mathbf{a}\cdot\mathbf{b}=0$$</p>
+<p>Now expand $|\mathbf{c}|^2=\mathbf{c}\cdot\mathbf{c}$:</p>
+<p class="display-math">$$|\mathbf{c}|^2 = (\mathbf{b}-\mathbf{a})\cdot(\mathbf{b}-\mathbf{a}) = |\mathbf{b}|^2 - 2\mathbf{a}\cdot\mathbf{b} + |\mathbf{a}|^2$$</p>
+<p>Using $\mathbf{a}\cdot\mathbf{b}=0$,</p>
+<p class="display-math">$$|\mathbf{c}|^2 = |\mathbf{a}|^2 + |\mathbf{b}|^2$$</p>
+<p>But $|\mathbf{a}|=CA$, $|\mathbf{b}|=CB$ and $|\mathbf{c}|=AB$, so</p>
+<p class="display-math">$$AB^2 = CA^2 + CB^2$$</p>
+<p><strong>Hence Pythagoras' theorem holds.</strong></p>
+<p>(Equivalently: if $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, then $|\mathbf{u}+\mathbf{v}|^2=|\mathbf{u}|^2+|\mathbf{v}|^2$, since the cross term $2\mathbf{u}\cdot\mathbf{v}$ vanishes.)</p></div></details>
+<h1 class="section" id="calculus-of-logarithmic-function-i">Calculus of Logarithmic Function (I)</h1>
+<p><em>Source: Year 12 (A1) Mathematics Extension 1 — Optional Challenging Questions (Level 3).</em></p>
+<h2 class="question" id="exercise-1-question-1">Exercise 1 — Question 1</h2>
+<aside class="question-box"><p>Using implicit differentiation, find the derivative of $y = \sqrt{\dfrac{x-1}{x+1}}$ in terms of $x$ only.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>For $x>1$ we have $y>0$. Take natural logarithms of both sides:</p>
+<p class="display-math">$$\ln y = \dfrac{1}{2}\bigl(\ln(x-1)-\ln(x+1)\bigr)$$</p>
+<p>Differentiate both sides with respect to $x$:</p>
+<p class="display-math">$$\dfrac{1}{y}\dfrac{dy}{dx} = \dfrac{1}{2}\left(\dfrac{1}{x-1}-\dfrac{1}{x+1}\right) = \dfrac{1}{2}\cdot\dfrac{2}{(x-1)(x+1)} = \dfrac{1}{x^2-1}$$</p>
+<p class="display-math">$$\dfrac{dy}{dx} = \dfrac{y}{x^2-1} = \dfrac{1}{x^2-1}\sqrt{\dfrac{x-1}{x+1}}$$</p>
+<p>Equivalently,</p>
+<p class="display-math">$$\dfrac{dy}{dx} = \dfrac{1}{(x+1)\sqrt{x^2-1}}$$</p>
+<p><strong>Answer:</strong> $\dfrac{dy}{dx}=\dfrac{1}{x^2-1}\sqrt{\dfrac{x-1}{x+1}}$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Alternative (squaring both sides)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Square both sides (valid for $x>1$, where $y>0$):</p>
+<p class="display-math">$$y^2 = \dfrac{x-1}{x+1}$$</p>
+<p>Differentiate both sides with respect to $x$ (quotient rule on the right, chain rule on the left):</p>
+<p class="display-math">$$2y\dfrac{dy}{dx} = \dfrac{(1)(x+1)-(x-1)(1)}{(x+1)^2} = \dfrac{2}{(x+1)^2}$$</p>
+<p class="display-math">$$\dfrac{dy}{dx} = \dfrac{1}{y(x+1)^2}$$</p>
+<p>Rewrite using $y^2=\dfrac{x-1}{x+1}$:</p>
+<p class="display-math">$$\dfrac{dy}{dx} = \dfrac{y}{y^2(x+1)^2} = \dfrac{y}{\left(\dfrac{x-1}{x+1}\right)(x+1)^2} = \dfrac{y}{x^2-1} = \dfrac{1}{x^2-1}\sqrt{\dfrac{x-1}{x+1}}$$</p>
+<p>Same answer as above.</p></div></details>
+<h2 class="question" id="exercise-1-question-2">Exercise 1 — Question 2</h2>
+<aside class="question-box"><p>By taking logarithms of both sides, differentiate $y=x^x$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>For $x>0$, write $y=x^x=e^{x\ln x}$, or take logs:</p>
+<p class="display-math">$$\ln y = x\ln x$$</p>
+<p class="display-math">$$\dfrac{1}{y}\dfrac{dy}{dx} = \ln x + x\cdot\dfrac{1}{x} = \ln x + 1$$</p>
+<p class="display-math">$$\dfrac{dy}{dx} = x^x(\ln x + 1)$$</p>
+<p><strong>Answer:</strong> $\dfrac{dy}{dx}=x^x(\ln x+1)$.</p></div></details>
+<h2 class="question" id="exercise-1-question-3">Exercise 1 — Question 3</h2>
+<aside class="question-box"><p>The variables $x$ and $y$ are positive and related by $x^a y^b = (x+y)^{a+b}$ where $a$ and $b$ are positive constants. By taking logarithms of both sides, show that $\dfrac{dy}{dx}=\dfrac{y}{x}$, provided that $bx\neq ay$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$a\ln x + b\ln y = (a+b)\ln(x+y)$$</p>
+<p>Differentiate both sides with respect to $x$:</p>
+<p class="display-math">$$\dfrac{a}{x} + \dfrac{b}{y}\dfrac{dy}{dx} = (a+b)\cdot\dfrac{1}{x+y}\left(1+\dfrac{dy}{dx}\right)$$</p>
+<p>Multiply through by $xy(x+y)$ to clear denominators, or rearrange for $y'$:</p>
+<p class="display-math">$$\dfrac{b}{y}y' - \dfrac{a+b}{x+y}y' = \dfrac{a+b}{x+y} - \dfrac{a}{x}$$</p>
+<p class="display-math">$$y'\left(\dfrac{b}{y}-\dfrac{a+b}{x+y}\right) = \dfrac{a(x+y)-(a+b)y}{x(x+y)} = \dfrac{ax-by}{x(x+y)}$$</p>
+<p class="display-math">$$y'\cdot\dfrac{b(x+y)-y(a+b)}{y(x+y)} = \dfrac{ax-by}{x(x+y)}$$</p>
+<p class="display-math">$$y'\cdot\dfrac{bx-ay}{y(x+y)} = \dfrac{ax-by}{x(x+y)} = \dfrac{-(bx-ay)}{x(x+y)}$$</p>
+<p>Since $bx\neq ay$, cancel $bx-ay$:</p>
+<p class="display-math">$$y'\cdot\dfrac{1}{y} = -\dfrac{1}{x}\cdot(-1) \quad\text{(after careful sign check)}$$</p>
+<p>More cleanly: from the previous line,</p>
+<p class="display-math">$$y' = \dfrac{ax-by}{x(x+y)}\cdot\dfrac{y(x+y)}{bx-ay} = \dfrac{(ax-by)y}{x(bx-ay)} = \dfrac{y}{x}$$</p>
+<p>since $ax-by=-(bx-ay)$.</p>
+<p><strong>Hence $\dfrac{dy}{dx}=\dfrac{y}{x}$.</strong></p></div></details>
+<h2 class="question" id="exercise-2-question-1">Exercise 2 — Question 1</h2>
+<aside class="question-box"><p>(a) Show that the tangent from the origin to the curve $y=\ln x$ has gradient $\dfrac{1}{e}$.</p><p>(b) Hence find the set of values of the real number $k$ for which the equation $\ln x = kx$ has two distinct roots.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let the point of tangency be $(t,\ln t)$ with $t>0$. Then $\dfrac{dy}{dx}=\dfrac{1}{x}$, so the gradient at $x=t$ is $\dfrac{1}{t}$.</p>
+<p>The tangent line is</p>
+<p class="display-math">$$Y-\ln t = \dfrac{1}{t}(X-t)$$</p>
+<p>It passes through the origin $(0,0)$:</p>
+<p class="display-math">$$0-\ln t = \dfrac{1}{t}(0-t) = -1 \Rightarrow \ln t = 1 \Rightarrow t=e$$</p>
+<p>Therefore the gradient is $\dfrac{1}{t}=\dfrac{1}{e}$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The equation $\ln x=kx$ ($x>0$) is equivalent to $k=\dfrac{\ln x}{x}$ whenever we seek intersections of $y=\ln x$ and the line $y=kx$.</p>
+<p>Consider $g(x)=\dfrac{\ln x}{x}$ for $x>0$.</p>
+<p class="display-math">$$g'(x)=\dfrac{1-\ln x}{x^2}$$</p>
+<p>So $g'(x)=0$ at $x=e$, and $g$ has a maximum there with $g(e)=\dfrac{1}{e}$.</p>
+<p>Also $g(x)\to 0$ as $x\to\infty$, $g(x)\to-\infty$ as $x\to 0^+$, and $g(x)\lt 0$ on $(0,1)$.</p>
+<p>Hence:</p>
+<p>• if $k=\dfrac{1}{e}$: exactly one positive root ($x=e$);</p>
+<p>• if $0\lt k\lt\dfrac{1}{e}$: exactly two distinct positive roots;</p>
+<p>• if $k\le 0$: at most one positive root.</p>
+<p><strong>Answer:</strong> two distinct roots when $0\lt k\lt\dfrac{1}{e}$.</p></div></details>
+<h2 class="question" id="exercise-3-question-1">Exercise 3 — Question 1</h2>
+<aside class="question-box"><p>(a) Differentiate $y=x^x$ by taking logarithms of both sides. Using this, describe the behaviour of the curve $y=x^x$ near $x=0$ and show that it becomes vertical as $x\to 0^+$. You may use $\lim_{x\to 0^+} x\ln x=0$.</p><p>(b) Determine the nature of any stationary points and find the point(s) on the curve where the tangent has gradient $1$.</p><p>(c) Sketch the function.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\ln y = x\ln x \Rightarrow \dfrac{y'}{y}=\ln x+1 \Rightarrow y'=x^x(\ln x+1)$$</p>
+<p>As $x\to 0^+$, $x\ln x\to 0$, so $x^x=e^{x\ln x}\to e^0=1$. Thus the curve approaches height $1$.</p>
+<p>The gradient $y'=x^x(\ln x+1)\to 1\cdot(-\infty)=-\infty$ as $x\to 0^+$, so the tangent becomes vertical.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Stationary points: $y'=0\Rightarrow \ln x+1=0\Rightarrow x=e^{-1}$ (since $x^x>0$).</p>
+<p class="display-math">$$y\left(e^{-1}\right)=\left(e^{-1}\right)^{e^{-1}}=e^{-1/e}$$</p>
+<p>For $0\lt x\lt e^{-1}$, $\ln x+1\lt 0$ so $y'\lt 0$; for $x>e^{-1}$, $y'>0$. Hence a local <strong>minimum</strong> at $\left(e^{-1},e^{-1/e}\right)$.</p>
+<p>Where the gradient is $1$:</p>
+<p class="display-math">$$x^x(\ln x+1)=1$$</p>
+<p>For $0\lt x\lt e^{-1}$, $\ln x+1\lt 0$, so $y'\lt 0\neq 1$.</p>
+<p>For $x>e^{-1}$, $y'$ increases continuously from $0$ (at the minimum) to $\infty$.</p>
+<p>At $x=1$: $1^1(\ln 1+1)=1$. Since $y'$ is continuous and strictly increases through the value $1$ only once on $(e^{-1},\infty)$, this is the unique solution.</p>
+<p><strong>Answer:</strong> local minimum at $\left(e^{-1},e^{-1/e}\right)$; tangent has gradient $1$ at $(1,1)$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Using (a) and (b), the sketch of $y=x^x$ for $x>0$ has these features:</p>
+<p>• as $x\to 0^+$, $y\to 1$ with a vertical tangent;</p>
+<p>• a local minimum at $\left(e^{-1},e^{-1/e}\right)$;</p>
+<p>• passes through $(1,1)$, where the gradient is $1$;</p>
+<p>• increasing for $x>e^{-1}$, with $y\to\infty$ as $x\to\infty$.</p>
+<figure class="figure"><img src="/year12/media/log1_ex3_q1c_sketch.png" alt="Sketch of y = x^x for x &gt; 0" loading="lazy" /></figure></div></details>
+<h2 class="question" id="exercise-3-question-2">Exercise 3 — Question 2</h2>
+<aside class="question-box"><figure class="figure"><img src="/year12/media/log1_ex3_q2_p.png" alt="Curve y = P(x), tangential to the x-axis at x = a" loading="lazy" /></figure><p>In the diagram, the curve $y=P(x)$ is tangential to the $x$-axis at $x=a$ where $0\lt a\lt 1$. Explain, using calculus, whether or not the curve $y=(\ln x)\,P(x)$ will be tangential to the $x$-axis at $x=a$. Then, on the same set of axes, sketch the curve $y=(\ln x)\,P(x)$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Since $y=P(x)$ is tangential to the $x$-axis at $x=a$,</p>
+<p class="display-math">$$P(a)=0 \quad\text{and}\quad P'(a)=0$$</p>
+<p>Let $f(x)=(\ln x)\,P(x)$ (defined for $x>0$). Then</p>
+<p class="display-math">$$f(a)=\ln a\cdot P(a)=0$$</p>
+<p class="display-math">$$f'(x)=\dfrac{1}{x}P(x)+\ln x\cdot P'(x)$$</p>
+<p class="display-math">$$f'(a)=\dfrac{1}{a}P(a)+\ln a\cdot P'(a)=0$$</p>
+<p>So $f(a)=f'(a)=0$: yes, $y=(\ln x)\,P(x)$ is also tangential to the $x$-axis at $x=a$.</p>
+<p><strong>Sketch</strong> (same axes; $P$ shown lighter for reference):</p>
+<p>• Domain $x>0$. Near $x=0^+$, $P(x)$ behaves like a multiple of $x$, and $x\ln x\to 0$, so $f(x)\to 0$.</p>
+<p>• Touches the $x$-axis at $x=a$ (still tangential).</p>
+<p>• For $0\lt x\lt 1$, $\ln x\lt 0$, so $f$ has the opposite sign to $P$; for $x>1$, $\ln x>0$, so $f$ has the same sign as $P$.</p>
+<p>• At $x=1$, $f(1)=\ln 1\cdot P(1)=0$, so the sketch crosses the $x$-axis at $x=1$.</p>
+<figure class="figure"><img src="/year12/media/log1_ex3_q2_sketch.png" alt="Sketch of y = (ln x) P(x) on the same axes as y = P(x)" loading="lazy" /></figure></div></details>
+<h1 class="section" id="calculus-of-logarithmic-function-ii">Calculus of Logarithmic Function (II)</h1>
+<p><em>Source: Year 12 (A1) Mathematics Extension 1 — Optional Challenging Questions (Level 3).</em></p>
+<h2 class="question" id="exercise-1-question-1-2">Exercise 1 — Question 1</h2>
+<aside class="question-box"><p>(a) Show that $\dfrac{d}{dx}\left[\dfrac{1}{2a}\ln\left|\dfrac{x-a}{x+a}\right|\right]=\dfrac{1}{x^2-a^2}$ for $a>0$. Hence find $\displaystyle\int\dfrac{1}{x^2-a^2}\,dx$.</p><p>(b) Hence, by using the substitution $x=u^2$ or otherwise, find $\displaystyle\int\dfrac{\sqrt{x}}{x-1}\,dx$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\dfrac{1}{2a}\ln\left|\dfrac{x-a}{x+a}\right|=\dfrac{1}{2a}\bigl(\ln|x-a|-\ln|x+a|\bigr)$$</p>
+<p>Differentiate:</p>
+<p class="display-math">$$\dfrac{d}{dx}=\dfrac{1}{2a}\left(\dfrac{1}{x-a}-\dfrac{1}{x+a}\right)=\dfrac{1}{2a}\cdot\dfrac{(x+a)-(x-a)}{(x-a)(x+a)}=\dfrac{1}{2a}\cdot\dfrac{2a}{x^2-a^2}=\dfrac{1}{x^2-a^2}$$</p>
+<p>Therefore, integrating both sides,</p>
+<p class="display-math">$$\int\dfrac{1}{x^2-a^2}\,dx=\dfrac{1}{2a}\ln\left|\dfrac{x-a}{x+a}\right|+C$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Put $x=u^2$ (so $u=\sqrt{x}$ for $x>0$), giving $dx=2u\,du$.</p>
+<p class="display-math">$$\int\dfrac{\sqrt{x}}{x-1}\,dx=\int\dfrac{u}{u^2-1}\cdot 2u\,du=\int\dfrac{2u^2}{u^2-1}\,du=\int\left(2+\dfrac{2}{u^2-1}\right)\,du$$</p>
+<p>Using part (a) with $a=1$:</p>
+<p class="display-math">$$\int\dfrac{2}{u^2-1}\,du=2\cdot\dfrac{1}{2}\ln\left|\dfrac{u-1}{u+1}\right|=\ln\left|\dfrac{u-1}{u+1}\right|$$</p>
+<p class="display-math">$$\int\dfrac{\sqrt{x}}{x-1}\,dx=2u+\ln\left|\dfrac{u-1}{u+1}\right|+C=2\sqrt{x}+\ln\left|\dfrac{\sqrt{x}-1}{\sqrt{x}+1}\right|+C$$</p>
+<p><strong>Answer:</strong> $2\sqrt{x}+\ln\left|\dfrac{\sqrt{x}-1}{\sqrt{x}+1}\right|+C$.</p></div></details>
+<h2 class="question" id="exercise-2-question-1-2">Exercise 2 — Question 1</h2>
+<aside class="question-box"><p>Evaluate $\displaystyle\int_{1}^{27}\dfrac{3}{\bigl(x^{1/3}+1\bigr)\,x^{2/3}}\,dx$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $u=x^{1/3}$, so $x=u^3$ and $dx=3u^2\,du$.</p>
+<p>When $x=1$, $u=1$; when $x=27$, $u=3$.</p>
+<p class="display-math">$$\int_{1}^{27}\dfrac{3}{(x^{1/3}+1)\,x^{2/3}}\,dx=\int_{1}^{3}\dfrac{3}{(u+1)\,u^2}\cdot 3u^2\,du=\int_{1}^{3}\dfrac{9}{u+1}\,du$$</p>
+<p class="display-math">$$=9\ln|u+1|\Big|_{1}^{3}=9\bigl(\ln 4-\ln 2\bigr)=9\ln 2$$</p>
+<p><strong>Answer:</strong> $9\ln 2$.</p></div></details>
+<h2 class="question" id="exercise-2-question-2">Exercise 2 — Question 2</h2>
+<aside class="question-box"><p>(a) Using the substitution $u=\dfrac{1}{x}$, show that $\displaystyle\int_{1/2}^{1}\dfrac{\ln x}{1+x^2}\,dx=\int_{2}^{1}\dfrac{\ln u}{1+u^2}\,du$.</p><p>(b) Deduce the value of $\displaystyle\int_{1/2}^{2}\dfrac{\ln x}{1+x^2}\,dx$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $u=\dfrac{1}{x}$, so $x=\dfrac{1}{u}$ and $dx=-\dfrac{1}{u^2}\,du$.</p>
+<p>When $x=\dfrac{1}{2}$, $u=2$; when $x=1$, $u=1$.</p>
+<p class="display-math">$$\int_{1/2}^{1}\dfrac{\ln x}{1+x^2}\,dx=\int_{2}^{1}\dfrac{\ln(1/u)}{1+1/u^2}\left(-\dfrac{1}{u^2}\right)\,du$$</p>
+<p class="display-math">$$=\int_{2}^{1}\dfrac{-\ln u}{(u^2+1)/u^2}\left(-\dfrac{1}{u^2}\right)\,du=\int_{2}^{1}\dfrac{\ln u}{1+u^2}\,du$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Write</p>
+<p class="display-math">$$I=\int_{1/2}^{2}\dfrac{\ln x}{1+x^2}\,dx=\int_{1/2}^{1}\dfrac{\ln x}{1+x^2}\,dx+\int_{1}^{2}\dfrac{\ln x}{1+x^2}\,dx$$</p>
+<p>From (a), the first integral equals $\displaystyle\int_{2}^{1}\dfrac{\ln u}{1+u^2}\,du=-\int_{1}^{2}\dfrac{\ln x}{1+x^2}\,dx$.</p>
+<p class="display-math">$$I=-\int_{1}^{2}\dfrac{\ln x}{1+x^2}\,dx+\int_{1}^{2}\dfrac{\ln x}{1+x^2}\,dx=0$$</p>
+<p><strong>Answer:</strong> $0$.</p></div></details>
+<h2 class="question" id="exercise-3-question-1-2">Exercise 3 — Question 1</h2>
+<aside class="question-box"><p>Consider the area under $y=\dfrac{1}{x}$ between $x=n$ and $x=n+1$, where $n>0$.</p><p>(a) Show that $\dfrac{1}{n+1}<\displaystyle\int_{n}^{n+1}\dfrac{1}{x}\,dx<\dfrac{1}{n}$.</p><p>(b) Hence show that $\dfrac{n}{n+1}<\ln\left(1+\dfrac{1}{n}\right)^{n}<1$.</p><p>(c) Take the limit as $n\to\infty$ to show that $\displaystyle\lim_{n\to\infty}\left(1+\dfrac{1}{n}\right)^{n}=e$.</p><p>(d) Repeat the above, replacing $n+1$ with $n+m$, to show that $\displaystyle\lim_{n\to\infty}\left(1+\dfrac{m}{n}\right)^{n}=e^{m}$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>On $[n,n+1]$, the function $y=\dfrac{1}{x}$ is decreasing, so its graph lies between the horizontal lines $y=\dfrac{1}{n+1}$ and $y=\dfrac{1}{n}$.</p>
+<p>Comparing areas of rectangles of width $1$ with the area under the curve:</p>
+<p class="display-math">$$\dfrac{1}{n+1}\cdot 1<\int_{n}^{n+1}\dfrac{1}{x}\,dx<\dfrac{1}{n}\cdot 1$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The middle expression is $\ln(n+1)-\ln n=\ln\left(1+\dfrac{1}{n}\right)$.</p>
+<p class="display-math">$$\dfrac{1}{n+1}<\ln\left(1+\dfrac{1}{n}\right)<\dfrac{1}{n}$$</p>
+<p>Multiply through by $n>0$:</p>
+<p class="display-math">$$\dfrac{n}{n+1}<n\ln\left(1+\dfrac{1}{n}\right)<1\quad\Leftrightarrow\quad\dfrac{n}{n+1}<\ln\left(1+\dfrac{1}{n}\right)^{n}<1$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $L_n=\left(1+\dfrac{1}{n}\right)^{n}$. From (b),</p>
+<p class="display-math">$$\dfrac{n}{n+1}<\ln L_n<1$$</p>
+<p>As $n\to\infty$, $\dfrac{n}{n+1}\to 1$, so by the squeeze theorem $\ln L_n\to 1$.</p>
+<p>Hence $L_n\to e^{1}=e$.</p>
+<p class="display-math">$$\lim_{n\to\infty}\left(1+\dfrac{1}{n}\right)^{n}=e$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (d)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Comparing areas under $y=\dfrac{1}{x}$ from $n$ to $n+m$ (width $m$) with rectangles of heights $\dfrac{1}{n+m}$ and $\dfrac{1}{n}$ gives</p>
+<p class="display-math">$$\dfrac{m}{n+m}<\ln\left(1+\dfrac{m}{n}\right)<\dfrac{m}{n}$$</p>
+<p>Multiply by $n$ and rearrange as in (b)–(c) to obtain</p>
+<p class="display-math">$$\dfrac{mn}{n+m}<\ln\left(1+\dfrac{m}{n}\right)^{n}<m$$</p>
+<p>As $n\to\infty$, $\dfrac{mn}{n+m}\to m$, so $\ln\left(1+\dfrac{m}{n}\right)^{n}\to m$, and therefore</p>
+<p class="display-math">$$\lim_{n\to\infty}\left(1+\dfrac{m}{n}\right)^{n}=e^{m}$$</p></div></details>
+<h2 class="question" id="exercise-3-question-2-2">Exercise 3 — Question 2</h2>
+<aside class="question-box"><p>(a) Using differentiation from first principles, show that if $y=\ln x$, then $y'=\displaystyle\lim_{h\to 0}\ln\left(1+\dfrac{h}{x}\right)^{1/h}$.</p><p>(b) Using the result $y'=\dfrac{1}{x}$, show that $\displaystyle\lim_{h\to 0}\ln\left(1+\dfrac{h}{x}\right)^{1/h}=\dfrac{1}{x}$.</p><p>(c) Substitute $n=\dfrac{1}{h}$ and $m=\dfrac{1}{x}$ to prove $\displaystyle\lim_{n\to\infty}\left(1+\dfrac{m}{n}\right)^{n}=e^{m}$.</p><p>(d) Hence, using your calculator with the following values of $n$, find the approximate value of $e$ to 9 decimal places:</p><p>(i) $n=10^{6}$</p><p>(ii) $n=10^{10}$</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$y'=\lim_{h\to 0}\dfrac{\ln(x+h)-\ln x}{h}=\lim_{h\to 0}\dfrac{1}{h}\ln\left(\dfrac{x+h}{x}\right)=\lim_{h\to 0}\ln\left(1+\dfrac{h}{x}\right)^{1/h}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Since $y=\ln x$ has derivative $\dfrac{1}{x}$, part (a) gives</p>
+<p class="display-math">$$\lim_{h\to 0}\ln\left(1+\dfrac{h}{x}\right)^{1/h}=\dfrac{1}{x}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Put $n=\dfrac{1}{h}$ and $m=\dfrac{1}{x}$. As $h\to 0^+$, we have $n\to\infty$.</p>
+<p>The limit in (b) becomes</p>
+<p class="display-math">$$\lim_{n\to\infty}\ln\left(1+\dfrac{m}{n}\right)^{n}=m\quad\Rightarrow\quad\lim_{n\to\infty}\left(1+\dfrac{m}{n}\right)^{n}=e^{m}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (d)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>With $m=1$, compute $\left(1+\dfrac{1}{n}\right)^{n}$:</p>
+<p>(i) $n=10^{6}$: $\left(1+10^{-6}\right)^{10^{6}}\approx 2.718280469$</p>
+<p>(ii) $n=10^{10}$: $\left(1+10^{-10}\right)^{10^{10}}\approx 2.718281828$</p>
+<p>(For comparison, $e\approx 2.718281828$ to 9 d.p.)</p></div></details>
+<h1 class="section" id="calculus-of-exponential-function-i">Calculus of Exponential Function (I)</h1>
+<p><em>Source: Year 12 (A1) Mathematics Extension 1 — Optional Challenging Questions (Level 3).</em></p>
+<h2 class="question" id="exercise-1-question-1-3">Exercise 1 — Question 1</h2>
+<aside class="question-box"><p>Differentiate $y=x^x$, either by expressing it as a power of $e$, or by taking logarithms of both sides.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p><strong>Method 1 — as a power of $e$.</strong> Write $x^x=e^{x\ln x}$ for $x>0$.</p>
+<p class="display-math">$$\dfrac{dy}{dx}=e^{x\ln x}\cdot\dfrac{d}{dx}(x\ln x)=x^x\bigl(\ln x+1\bigr)$$</p>
+<p><strong>Method 2 — logarithmic differentiation.</strong> Take $\ln$ of both sides:</p>
+<p class="display-math">$$\ln y=x\ln x$$</p>
+<p>Differentiate:</p>
+<p class="display-math">$$\dfrac{1}{y}\dfrac{dy}{dx}=\ln x+1\quad\Rightarrow\quad\dfrac{dy}{dx}=y(\ln x+1)=x^x(\ln x+1)$$</p>
+<p><strong>Answer:</strong> $\dfrac{dy}{dx}=x^x(\ln x+1)$ for $x>0$.</p></div></details>
+<h2 class="question" id="exercise-1-question-2-2">Exercise 1 — Question 2</h2>
+<aside class="question-box"><p>(a) Prove that the derivative of $f(x)=2^x$ is $f'(x)=(\ln 2)\,2^x$.</p><p>(b) From first principles, prove that the derivative of $f(x)=2^x$ is $f'(x)=c\cdot 2^x$ where $c=\displaystyle\lim_{h\to 0}\dfrac{2^h-1}{h}$.</p><p>(c) Hence, estimate the value of $\ln 2$, correct to 3 decimal places.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Write $2^x=e^{x\ln 2}$. Then</p>
+<p class="display-math">$$f'(x)=e^{x\ln 2}\cdot\ln 2=(\ln 2)\,2^x$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$f'(x)=\lim_{h\to 0}\dfrac{2^{x+h}-2^x}{h}=2^x\lim_{h\to 0}\dfrac{2^h-1}{h}=c\cdot 2^x$$</p>
+<p>where $c=\displaystyle\lim_{h\to 0}\dfrac{2^h-1}{h}$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Comparing (a) and (b), $c=\ln 2$. Estimate the limit with a small $h$, e.g. $h=0.001$:</p>
+<p class="display-math">$$\ln 2\approx\dfrac{2^{0.001}-1}{0.001}\approx 0.693$$</p>
+<p><strong>Answer:</strong> $\ln 2\approx 0.693$ (3 d.p.).</p></div></details>
+<h2 class="question" id="exercise-2-question-2-2">Exercise 2 — Question 2</h2>
+<aside class="question-box"><p>Consider the function $f(x)=e^{x/(1+kx)}$ where $k$ is a positive constant.</p><p>(a) Find $f'(x)$ and $f''(x)$.</p><p>(b) Show that $f(x)$ has a point of inflexion at $\left(\dfrac{1}{2k^2}-\dfrac{1}{k},\,e^{1/k-2}\right)$.</p><p>(c) Show that the tangent to $y=f(x)$ at $x=a$ passes through the origin if and only if $k^2 a^2+(2k-1)a+1=0$.</p><p>(d) Hence, show that no tangents to $y=f(x)$ pass through the origin if and only if $k>\dfrac{1}{4}$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Let $u=\dfrac{x}{1+kx}$. Then $f=e^u$ and</p>
+<p class="display-math">$$u'=\dfrac{(1+kx)-x\cdot k}{(1+kx)^2}=\dfrac{1}{(1+kx)^2}$$</p>
+<p class="display-math">$$f'(x)=e^u\cdot u'=\dfrac{e^{x/(1+kx)}}{(1+kx)^2}$$</p>
+<p>Differentiate again (product / quotient):</p>
+<p class="display-math">$$f''(x)=e^u\cdot u'\cdot(1+kx)^{-2}+e^u\cdot(-2)(1+kx)^{-3}\cdot k$$</p>
+<p class="display-math">$$=e^u(1+kx)^{-3}\left(\dfrac{1}{1+kx}-2k\right)=e^{x/(1+kx)}\,(1+kx)^{-4}\bigl(1-2k-2k^2 x\bigr)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Set $f''(x)=0$. Since the exponential and $(1+kx)^{-4}$ never vanish,</p>
+<p class="display-math">$$1-2k-2k^2 x=0\quad\Rightarrow\quad x=\dfrac{1-2k}{2k^2}=\dfrac{1}{2k^2}-\dfrac{1}{k}$$</p>
+<p>At this $x$-value,</p>
+<p class="display-math">$$1+kx=1+k\left(\dfrac{1}{2k^2}-\dfrac{1}{k}\right)=\dfrac{1}{2k},\quad u=\dfrac{x}{1+kx}=\dfrac{1}{k}-2$$</p>
+<p class="display-math">$$f(x)=e^{1/k-2}$$</p>
+<p>Moreover $f''$ changes sign at this root (the factor $1-2k-2k^2 x$ is linear with negative slope), so it is a point of inflexion.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The tangent at $x=a$ is $y-f(a)=f'(a)(x-a)$. It passes through $(0,0)$ iff</p>
+<p class="display-math">$$-f(a)=-a f'(a)\quad\Leftrightarrow\quad f(a)=a f'(a)$$</p>
+<p>Using $f'(a)=\dfrac{f(a)}{(1+ka)^2}$ and $f(a)\neq 0$,</p>
+<p class="display-math">$$1=\dfrac{a}{(1+ka)^2}\quad\Leftrightarrow\quad (1+ka)^2=a\quad\Leftrightarrow\quad k^2 a^2+(2k-1)a+1=0$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (d)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The quadratic in $a$ has discriminant</p>
+<p class="display-math">$$\Delta=(2k-1)^2-4k^2\cdot 1=4k^2-4k+1-4k^2=1-4k$$</p>
+<p>There is no real $a$ iff $\Delta<0$ iff $1-4k<0$ iff $k>\dfrac{1}{4}$. Hence no tangent through the origin iff $k>\dfrac{1}{4}$.</p></div></details>
+<h2 class="question" id="exercise-3-question-1-3">Exercise 3 — Question 1</h2>
+<aside class="question-box"><p>The graph of $f(x)=x^n e^{-x}$ is shown for $x>0$.</p><figure class="figure"><img src="/year12/media/exp1_ex3_q1.png" alt="Graph of f(x)=x^n e^{-x} for x&gt;0" loading="lazy" /></figure><p>(a) Show that the maximum turning point occurs at $x=n$.</p><p>(b) By considering the relationship between the values of $f(n)$, $f(n-1)$ and $f(n+1)$, prove that $\left(1+\dfrac{1}{n}\right)^n < e < \left(1-\dfrac{1}{n}\right)^{-n}$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>For $x>0$, take logarithms or use the product rule:</p>
+<p class="display-math">$$f'(x)=n x^{n-1}e^{-x}-x^n e^{-x}=x^{n-1}e^{-x}(n-x)$$</p>
+<p>So $f'(x)=0$ at $x=n$ (for $x>0$). Sign of $f'$: positive on $(0,n)$ and negative on $(n,\infty)$, hence a maximum at $x=n$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Since the maximum is at $x=n$, we have $f(n)>f(n+1)$ and $f(n)>f(n-1)$ (for $n>1$).</p>
+<p>From $f(n)>f(n+1)$:</p>
+<p class="display-math">$$n^n e^{-n}>(n+1)^n e^{-(n+1)}\quad\Rightarrow\quad e>\left(\dfrac{n+1}{n}\right)^n=\left(1+\dfrac{1}{n}\right)^n$$</p>
+<p>From $f(n)>f(n-1)$:</p>
+<p class="display-math">$$n^n e^{-n}>(n-1)^n e^{-(n-1)}\quad\Rightarrow\quad e<\left(\dfrac{n}{n-1}\right)^n=\left(1-\dfrac{1}{n}\right)^{-n}$$</p>
+<p class="display-math">$$\left(1+\dfrac{1}{n}\right)^n < e < \left(1-\dfrac{1}{n}\right)^{-n}$$</p></div></details>
+<h2 class="question" id="exercise-3-question-2-3">Exercise 3 — Question 2</h2>
+<aside class="question-box"><p>The function $g$ is even, and</p><p class="display-math">$$g(x)=4e^{-x}-6e^{-2x}\quad(x\ge 0)$$</p><p>(with $g(x)=g(-x)$ for $x<0$).</p><p>(a) Show that the graph of $y=g(x)$ has a maximum turning point at $\left(\ln 3,\,\dfrac{2}{3}\right)$.</p><p>(b) Sketch the curve $y=g(x)$, labelling the turning points, inflexion points, asymptotes and points of intersection with the axes.</p><p>(c) Discuss the behaviour of the curve $y=g(x)$ at $x=0$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>For $x>0$,</p>
+<p class="display-math">$$g'(x)=-4e^{-x}+12e^{-2x}=4e^{-2x}\bigl(3-e^{x}\bigr)$$</p>
+<p>So $g'(x)=0$ when $e^{x}=3$, i.e. $x=\ln 3$.</p>
+<p class="display-math">$$g(\ln 3)=4e^{-\ln 3}-6e^{-2\ln 3}=\dfrac{4}{3}-\dfrac{6}{9}=\dfrac{4}{3}-\dfrac{2}{3}=\dfrac{2}{3}$$</p>
+<p>$g'$ changes from positive to negative at $x=\ln 3$, so this is a maximum. (By evenness there is also a maximum at $\bigl(-\ln 3,\tfrac{2}{3}\bigr)$.)</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><figure class="figure"><img src="/year12/media/exp1_ex3_q2_sketch.png" alt="Sketch of y=g(x)" loading="lazy" /></figure>
+<p><strong>Intercepts:</strong> $g(0)=4-6=-2$. For $x$-intercepts on $x\ge 0$, set $4e^{-x}-6e^{-2x}=0$. With $u=e^{-x}>0$, $4u-6u^2=0\Rightarrow u=\dfrac{2}{3}$, so $x=\ln\dfrac{3}{2}$. By evenness the curve also meets the $x$-axis at $-\ln\dfrac{3}{2}$.</p>
+<p><strong>Turning points:</strong> $\bigl(\pm\ln 3,\,\tfrac{2}{3}\bigr)$ (maxima).</p>
+<p><strong>Inflexion points:</strong> for $x>0$, $g''(x)=4e^{-x}-24e^{-2x}=0\Rightarrow e^{x}=6\Rightarrow x=\ln 6$, and $g(\ln 6)=\dfrac{4}{6}-\dfrac{6}{36}=\dfrac{1}{2}$. By evenness: $\bigl(\pm\ln 6,\,\tfrac{1}{2}\bigr)$.</p>
+<p><strong>Asymptote:</strong> $y\to 0$ as $x\to\pm\infty$ (horizontal asymptote $y=0$).</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>As $x\to 0^+$, $g'(x)\to -4+12=8$; as $x\to 0^-$, $g'(x)\to -8$ (derivative of an even function is odd). Thus $g$ is continuous at $x=0$ with $g(0)=-2$, but not differentiable there: the graph has a sharp corner (a cusp-like kink) pointing downwards.</p></div></details>
+<h1 class="section" id="calculus-of-exponential-function-ii">Calculus of Exponential Function (II)</h1>
+<p><em>Source: Year 12 (A1) Mathematics Extension 1 — Optional Challenging Questions (Level 3).</em></p>
+<h2 class="question" id="exercise-1-question-1-4">Exercise 1 — Question 1</h2>
+<aside class="question-box"><p>Show that $\displaystyle\int\dfrac{e^x+1}{e^{x/2}+e^{-x/2}}\,dx=2e^{x/2}+C$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Multiply numerator and denominator by $e^{x/2}$:</p>
+<p class="display-math">$$\dfrac{e^x+1}{e^{x/2}+e^{-x/2}}=\dfrac{(e^x+1)\,e^{x/2}}{(e^{x/2}+e^{-x/2})\,e^{x/2}}=\dfrac{(e^x+1)\,e^{x/2}}{e^x+1}=e^{x/2}$$</p>
+<p class="display-math">$$\int e^{x/2}\,dx=2e^{x/2}+C$$</p></div></details>
+<h2 class="question" id="exercise-1-question-2-3">Exercise 1 — Question 2</h2>
+<aside class="question-box"><p>If $y=\dfrac{1}{2}\bigl(e^{ax}-e^{-ax}\bigr)$ where $a$ is a positive constant,</p><p>(a) Show that $x=\dfrac{1}{a}\ln\bigl(y+\sqrt{1+y^2}\bigr)$.</p><p>(b) Show that $\left(\dfrac{dy}{dx}\right)^2-a^2 y^2=a^2$.</p><p>(c) Hence deduce that $\displaystyle\int\dfrac{dy}{\sqrt{1+y^2}}=\ln\bigl(y+\sqrt{1+y^2}\bigr)+C$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$2y=e^{ax}-e^{-ax}$$</p>
+<p>Multiply by $e^{ax}$:</p>
+<p class="display-math">$$2y\,e^{ax}=e^{2ax}-1\quad\Rightarrow\quad e^{2ax}-2y\,e^{ax}-1=0$$</p>
+<p>Quadratic in $e^{ax}$ (take the positive root):</p>
+<p class="display-math">$$e^{ax}=y+\sqrt{y^2+1}\quad\Rightarrow\quad x=\dfrac{1}{a}\ln\bigl(y+\sqrt{1+y^2}\bigr)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\dfrac{dy}{dx}=\dfrac{a}{2}\bigl(e^{ax}+e^{-ax}\bigr)$$</p>
+<p class="display-math">$$\left(\dfrac{dy}{dx}\right)^2-a^2 y^2=\dfrac{a^2}{4}\bigl(e^{ax}+e^{-ax}\bigr)^2-a^2\cdot\dfrac{1}{4}\bigl(e^{ax}-e^{-ax}\bigr)^2$$</p>
+<p class="display-math">$$=\dfrac{a^2}{4}\Bigl[(e^{2ax}+2+e^{-2ax})-(e^{2ax}-2+e^{-2ax})\Bigr]=\dfrac{a^2}{4}\cdot 4=a^2$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>From (b), $\dfrac{dy}{dx}=a\sqrt{1+y^2}$ (since $\dfrac{dy}{dx}>0$).</p>
+<p class="display-math">$$\dfrac{dx}{dy}=\dfrac{1}{a\sqrt{1+y^2}}\quad\Rightarrow\quad\int\dfrac{dy}{\sqrt{1+y^2}}=a\int dx=ax+C'$$</p>
+<p>Using (a), $ax=\ln\bigl(y+\sqrt{1+y^2}\bigr)$, so</p>
+<p class="display-math">$$\int\dfrac{dy}{\sqrt{1+y^2}}=\ln\bigl(y+\sqrt{1+y^2}\bigr)+C$$</p></div></details>
+<h2 class="question" id="exercise-2-question-1-3">Exercise 2 — Question 1</h2>
+<aside class="question-box"><p>(a) (i) Differentiate $y=x^2 e^{-x^2}$.</p><p>(ii) Hence show that $\displaystyle\int x^3 e^{-x^2}\,dx=-\dfrac{e^{-x^2}}{2}(x^2+1)+C$, and calculate $\displaystyle\int_1^2 x^3 e^{-x^2}\,dx$.</p><p>(b) Given that $I=\displaystyle\int_{-1}^{1}\dfrac{x^2 e^x}{e^x+1}\,dx$ and $J=\displaystyle\int_{-1}^{1}\dfrac{x^2}{e^x+1}\,dx$:</p><p>(i) Use the substitution $u=-x$ to show that $I=J$.</p><p>(ii) Hence evaluate $I$ and $J$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)(i)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\dfrac{dy}{dx}=2x e^{-x^2}+x^2 e^{-x^2}(-2x)=2x e^{-x^2}(1-x^2)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)(ii)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>From (i), $\dfrac{dy}{dx}=2x e^{-x^2}-2x^3 e^{-x^2}$, so</p>
+<p class="display-math">$$x^3 e^{-x^2}=x e^{-x^2}-\dfrac{1}{2}\dfrac{dy}{dx}$$</p>
+<p class="display-math">$$\int x^3 e^{-x^2}\,dx=\int x e^{-x^2}\,dx-\dfrac{1}{2}y+C=-\dfrac{1}{2}e^{-x^2}-\dfrac{1}{2}x^2 e^{-x^2}+C=-\dfrac{e^{-x^2}}{2}(x^2+1)+C$$</p>
+<p class="display-math">$$\int_1^2 x^3 e^{-x^2}\,dx=\left[-\dfrac{e^{-x^2}}{2}(x^2+1)\right]_1^2=-\dfrac{5}{2}e^{-4}+\dfrac{2}{2}e^{-1}=e^{-1}-\dfrac{5}{2}e^{-4}$$</p>
+<p><strong>Answer:</strong> $e^{-1}-\dfrac{5}{2}e^{-4}$.</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)(i)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Put $u=-x$ in $I$. Then $dx=-du$; when $x=-1$, $u=1$; when $x=1$, $u=-1$.</p>
+<p class="display-math">$$I=\int_{1}^{-1}\dfrac{(-u)^2 e^{-u}}{e^{-u}+1}(-du)=\int_{-1}^{1}\dfrac{u^2 e^{-u}}{e^{-u}+1}\,du$$</p>
+<p>Multiply numerator and denominator by $e^{u}$:</p>
+<p class="display-math">$$I=\int_{-1}^{1}\dfrac{u^2}{1+e^{u}}\,du=J$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)(ii)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Add the two integrals:</p>
+<p class="display-math">$$I+J=\int_{-1}^{1}\dfrac{x^2 e^x+x^2}{e^x+1}\,dx=\int_{-1}^{1}x^2\,dx=\left[\dfrac{x^3}{3}\right]_{-1}^{1}=\dfrac{2}{3}$$</p>
+<p>Since $I=J$, we have $I=J=\dfrac{1}{3}$.</p>
+<p><strong>Answer:</strong> $I=J=\dfrac{1}{3}$.</p></div></details>
+<h2 class="question" id="exercise-2-question-2-3">Exercise 2 — Question 2</h2>
+<aside class="question-box"><p>(a) (i) Evaluate $\displaystyle\int_{\delta}^{1}\dfrac{e^{\sqrt{x}}}{\sqrt{x}}\,dx$.</p><p>(ii) What happens to the integral as $\delta\to 0^+$?</p><p>(b) (i) Differentiate $xe^{-x}$ and hence find $\displaystyle\int_0^{N} xe^{-x}\,dx$.</p><p>(ii) Determine the limit of the integral as $N\to\infty$.</p><p>(iii) Differentiate $x^2 e^{-x}$, and hence find $\displaystyle\int_0^{\infty} x^2 e^{-x}\,dx$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)(i)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Put $u=\sqrt{x}$, so $x=u^2$ and $dx=2u\,du$.</p>
+<p>When $x=\delta$, $u=\sqrt{\delta}$; when $x=1$, $u=1$.</p>
+<p class="display-math">$$\int_{\delta}^{1}\dfrac{e^{\sqrt{x}}}{\sqrt{x}}\,dx=\int_{\sqrt{\delta}}^{1}\dfrac{e^{u}}{u}\cdot 2u\,du=2\int_{\sqrt{\delta}}^{1}e^{u}\,du=2\bigl(e-e^{\sqrt{\delta}}\bigr)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)(ii)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>As $\delta\to 0^+$, $e^{\sqrt{\delta}}\to e^{0}=1$, so the integral tends to $2(e-1)$.</p>
+<p>(The improper integral $\displaystyle\int_0^{1}\dfrac{e^{\sqrt{x}}}{\sqrt{x}}\,dx$ converges.)</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)(i)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\dfrac{d}{dx}\bigl(xe^{-x}\bigr)=e^{-x}-xe^{-x}=e^{-x}(1-x)$$</p>
+<p>Rearrange: $xe^{-x}=e^{-x}-\dfrac{d}{dx}(xe^{-x})$.</p>
+<p class="display-math">$$\int xe^{-x}\,dx=-e^{-x}-xe^{-x}+C=-e^{-x}(x+1)+C$$</p>
+<p class="display-math">$$\int_0^{N} xe^{-x}\,dx=\bigl[-e^{-x}(x+1)\bigr]_0^{N}=-e^{-N}(N+1)-(-1)=1-e^{-N}(N+1)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)(ii)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\lim_{N\to\infty}\int_0^{N} xe^{-x}\,dx=1\quad\bigl(\text{since }e^{-N}(N+1)\to 0\bigr)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)(iii)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$\dfrac{d}{dx}\bigl(x^2 e^{-x}\bigr)=2x e^{-x}-x^2 e^{-x}=e^{-x}(2x-x^2)$$</p>
+<p>So $x^2 e^{-x}=2x e^{-x}-\dfrac{d}{dx}(x^2 e^{-x})$.</p>
+<p class="display-math">$$\int x^2 e^{-x}\,dx=2\int xe^{-x}\,dx-x^2 e^{-x}+C=-e^{-x}(x^2+2x+2)+C$$</p>
+<p class="display-math">$$\int_0^{\infty} x^2 e^{-x}\,dx=\lim_{N\to\infty}\bigl[-e^{-x}(x^2+2x+2)\bigr]_0^{N}=0-(-2)=2$$</p>
+<p><strong>Answer:</strong> $2$.</p></div></details>
+<h2 class="question" id="exercise-3-question-1-4">Exercise 3 — Question 1</h2>
+<aside class="question-box"><p>The sketch shows the curve $y=\dfrac{e^{2x}-1}{e^{2x}+1}$ and its asymptotes $y=\pm 1$, and the line $x=k$ where $k>0$.</p><figure class="figure"><img src="/year12/media/exp2_ex3_q1.png" alt="Curve y=(e^{2x}-1)/(e^{2x}+1) with shaded area A" loading="lazy" /></figure><p>(a) Using the substitution $u=e^{2x}$, or otherwise, show that the area in the first quadrant bounded by the curve and the lines $x=0$, $y=1$ and $x=k$ is given by $A=\ln 2+2k-\ln(e^{2k}+1)$.</p><p>(b) Explain why this area is always less than $\ln 2$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$A=\int_0^{k}\left(1-\dfrac{e^{2x}-1}{e^{2x}+1}\right)\,dx=\int_0^{k}\dfrac{2}{e^{2x}+1}\,dx$$</p>
+<p>Put $u=e^{2x}$, so $du=2e^{2x}\,dx=2u\,dx$ and $dx=\dfrac{du}{2u}$.</p>
+<p>When $x=0$, $u=1$; when $x=k$, $u=e^{2k}$.</p>
+<p class="display-math">$$A=\int_1^{e^{2k}}\dfrac{2}{u+1}\cdot\dfrac{du}{2u}=\int_1^{e^{2k}}\dfrac{1}{u(u+1)}\,du=\int_1^{e^{2k}}\left(\dfrac{1}{u}-\dfrac{1}{u+1}\right)\,du$$</p>
+<p class="display-math">$$=\bigl[\ln u-\ln(u+1)\bigr]_1^{e^{2k}}=\ln\dfrac{e^{2k}}{e^{2k}+1}-\ln\dfrac{1}{2}=2k-\ln(e^{2k}+1)+\ln 2$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$A=\ln 2+2k-\ln(e^{2k}+1)=\ln 2-\ln\bigl(1+e^{-2k}\bigr)$$</p>
+<p>For $k>0$, $e^{-2k}>0$, so $\ln(1+e^{-2k})>0$. Hence $A<\ln 2$.</p></div></details>
+<h1 class="section" id="calculus-of-trigonometric-functions-i">Calculus of Trigonometric Functions (I)</h1>
+<p><em>Source: Year 12 (A1) Mathematics Extension 1 — Optional Challenging Questions (Level 3).</em></p>
+<h2 class="question" id="exercise-1-question-1-5">Exercise 1 — Question 1</h2>
+<aside class="question-box"><p>Explain the geometrical significance of both $\displaystyle\lim_{\theta\to 0}\dfrac{\sin\theta}{\theta}=1$ and $\displaystyle\lim_{\theta\to 0}\dfrac{\tan\theta}{\theta}=1$.</p><figure class="figure"><img src="/year12/media/trig1_ex1_q1.png" alt="Unit circle with chord, arc and tangent for small θ" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>On the unit circle, let $\angle AOB=\theta$ (radians), with arc $AB$ of length $\theta$, chord $AB$, perpendicular $AP=\sin\theta$, and tangent segment $BT=\tan\theta$.</p>
+<p>Comparing lengths (for $0<\theta<\tfrac{\pi}{2}$):</p>
+<p class="display-math">$$\sin\theta < \theta < \tan\theta$$</p>
+<p>Divide through by $\theta>0$:</p>
+<p class="display-math">$$\dfrac{\sin\theta}{\theta}<1<\dfrac{\tan\theta}{\theta}$$</p>
+<p>As $\theta\to 0^+$, the chord, arc and tangent segment all become indistinguishable, so both ratios tend to $1$. Geometrically:</p>
+<p>$\dfrac{\sin\theta}{\theta}\to 1$ means the vertical rise $\sin\theta$ is asymptotically the same as the arc length $\theta$;</p>
+<p>$\dfrac{\tan\theta}{\theta}\to 1$ means the tangent length $\tan\theta$ is likewise asymptotically equal to the arc length.</p>
+<p>(Equivalently: for small angles in radians, $\sin\theta\approx\theta\approx\tan\theta$.)</p></div></details>
+<h2 class="question" id="exercise-1-question-2-4">Exercise 1 — Question 2</h2>
+<aside class="question-box"><p>The diagram shows a regular $n$-sided polygon inscribed in a circle of radius $r$. Each side subtends an angle of $\alpha$ radians at the centre.</p><figure class="figure"><img src="/year12/media/trig1_ex1_q2.png" alt="Regular polygon inscribed in a circle with central angle α" loading="lazy" /></figure><p>(a) Prove that the perimeter of the polygon is $2nr\sin\dfrac{\pi}{n}$.</p><p>(b) Prove that the area of the polygon is $\dfrac{1}{2}nr^2\sin\dfrac{2\pi}{n}$.</p><p>(c) Also prove that the corresponding area of the circumscribed polygon (sides tangent to the circle) is $nr^2\tan\dfrac{\pi}{n}$.</p><p>(d) Hence deduce the area of the circle by using an inequality and limits.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The central angle is $\alpha=\dfrac{2\pi}{n}$.</p>
+<p>Each side is a chord of angular width $\alpha$, so its length is</p>
+<p class="display-math">$$2r\sin\dfrac{\alpha}{2}=2r\sin\dfrac{\pi}{n}$$</p>
+<p class="display-math">$$\text{Perimeter}=n\cdot 2r\sin\dfrac{\pi}{n}=2nr\sin\dfrac{\pi}{n}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The polygon is made of $n$ isosceles triangles of two sides $r$ and included angle $\alpha$:</p>
+<p class="display-math">$$\text{Area}=n\cdot\dfrac{1}{2}r^2\sin\alpha=\dfrac{1}{2}nr^2\sin\dfrac{2\pi}{n}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>For the circumscribed polygon, each side is tangent to the circle. Half a side forms a right triangle with opposite side $r\tan\dfrac{\pi}{n}$, so each full side is $2r\tan\dfrac{\pi}{n}$.</p>
+<p>Area of one triangle from the centre to a side:</p>
+<p class="display-math">$$\dfrac{1}{2}\cdot\bigl(2r\tan\dfrac{\pi}{n}\bigr)\cdot r=r^2\tan\dfrac{\pi}{n}$$</p>
+<p class="display-math">$$\text{Total area}=nr^2\tan\dfrac{\pi}{n}$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (d)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The inscribed polygon lies inside the circle, which lies inside the circumscribed polygon:</p>
+<p class="display-math">$$\dfrac{1}{2}nr^2\sin\dfrac{2\pi}{n}\le \pi r^2\le nr^2\tan\dfrac{\pi}{n}$$</p>
+<p>Divide by $r^2>0$:</p>
+<p class="display-math">$$n\sin\dfrac{\pi}{n}\cos\dfrac{\pi}{n}\le \pi\le n\tan\dfrac{\pi}{n}$$</p>
+<p>Let $\theta=\dfrac{\pi}{n}$. As $n\to\infty$, $\theta\to 0^+$, and using $\dfrac{\sin\theta}{\theta}\to 1$ and $\dfrac{\tan\theta}{\theta}\to 1$:</p>
+<p class="display-math">$$n\sin\dfrac{\pi}{n}\cos\dfrac{\pi}{n}=\pi\cdot\dfrac{\sin\theta}{\theta}\cdot\cos\theta\to\pi\cdot 1\cdot 1=\pi$$</p>
+<p class="display-math">$$n\tan\dfrac{\pi}{n}=\pi\cdot\dfrac{\tan\theta}{\theta}\to\pi$$</p>
+<p>By the squeeze theorem the area of the circle is $\pi r^2$.</p></div></details>
+<h2 class="question" id="exercise-2-question-1-4">Exercise 2 — Question 1</h2>
+<aside class="question-box"><p>If $f(x)=\cos^2 x+\cos^2\!\left(x+\dfrac{2\pi}{3}\right)+\cos^2\!\left(x-\dfrac{2\pi}{3}\right)$, prove that $f'(x)=0$ for all real $x$. Hence show that $f(x)=\dfrac{3}{2}$ for all real $x$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$f'(x)=-\sin 2x-\sin\!\left(2x+\dfrac{4\pi}{3}\right)-\sin\!\left(2x-\dfrac{4\pi}{3}\right)$$</p>
+<p>The three angles $2x$, $2x+\dfrac{4\pi}{3}$, $2x-\dfrac{4\pi}{3}$ are equally spaced by $\dfrac{4\pi}{3}$. Their sines sum to zero:</p>
+<p class="display-math">$$\sin\theta+\sin\!\left(\theta+\dfrac{4\pi}{3}\right)+\sin\!\left(\theta-\dfrac{4\pi}{3}\right)=2\sin\theta\cos\dfrac{4\pi}{3}+\sin\theta=\sin\theta\bigl(1+2\cdot(-\tfrac{1}{2})\bigr)=0$$</p>
+<p>with $\theta=2x$. Hence $f'(x)=0$ for all $x$, so $f$ is constant.</p>
+<p class="display-math">$$f(0)=1+\cos^2\dfrac{2\pi}{3}+\cos^2\!\left(-\dfrac{2\pi}{3}\right)=1+\left(-\dfrac{1}{2}\right)^2+\left(-\dfrac{1}{2}\right)^2=1+\dfrac{1}{4}+\dfrac{1}{4}=\dfrac{3}{2}$$</p>
+<p>Therefore $f(x)=\dfrac{3}{2}$ for all real $x$.</p></div></details>
+<h2 class="question" id="exercise-3-question-1-5">Exercise 3 — Question 1</h2>
+<aside class="question-box"><p>Let $f(t)=\sin(a+nt)\sin b-\sin a\sin(b-nt)$, where $a$, $b$ and $n$ are constants with $a>0$, $b>0$, $a+b<\pi$ and $n\neq 0$.</p><p>(a) Prove that $f''(t)=-n^2 f(t)$ and $f(0)=0$.</p><p>(b) Prove that $f(t)=\sin(a+b)\sin(nt)$.</p><p>(c) Find all values of $t$ for which $\dfrac{\sin(a+nt)}{\sin(b-nt)}=\dfrac{\sin a}{\sin b}$.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p class="display-math">$$f(0)=\sin a\sin b-\sin a\sin b=0$$</p>
+<p class="display-math">$$f'(t)=n\cos(a+nt)\sin b+n\sin a\cos(b-nt)$$</p>
+<p class="display-math">$$f''(t)=-n^2\sin(a+nt)\sin b+n^2\sin a\sin(b-nt)=-n^2\bigl(\sin(a+nt)\sin b-\sin a\sin(b-nt)\bigr)=-n^2 f(t)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Expand using angle formulae:</p>
+<p class="display-math">$$\sin(a+nt)\sin b=(\sin a\cos(nt)+\cos a\sin(nt))\sin b$$</p>
+<p class="display-math">$$\sin a\sin(b-nt)=\sin a\bigl(\sin b\cos(nt)-\cos b\sin(nt)\bigr)$$</p>
+<p class="display-math">$$f(t)=(\cos a\sin b+\sin a\cos b)\sin(nt)=\sin(a+b)\sin(nt)$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (c)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>The given equation is equivalent to $\sin(a+nt)\sin b=\sin a\sin(b-nt)$, i.e. $f(t)=0$, provided $\sin(b-nt)\neq 0$.</p>
+<p class="display-math">$$\sin(a+b)\sin(nt)=0$$</p>
+<p>Since $a>0$, $b>0$ and $a+b<\pi$, we have $\sin(a+b)\neq 0$. Thus $\sin(nt)=0$, so $nt=k\pi$ for $k\in\mathbb{Z}$.</p>
+<p class="display-math">$$t=\dfrac{k\pi}{n},\quad k\in\mathbb{Z}$$</p>
+<p>Exclude values where $\sin(b-nt)=0$, i.e. where $b-\dfrac{k\pi}{n}=m\pi$ for some integer $m$. (In particular $t=0$ is always a solution.)</p></div></details>
+<h2 class="question" id="exercise-3-question-2-4">Exercise 3 — Question 2</h2>
+<aside class="question-box"><p>(a) If $y=Ae^{\lambda x}\sin x+Be^{\lambda x}\cos x$, show that $y''-2\lambda y'+(\lambda^2+1)y=0$.</p><p>(b) A function satisfies $y''-2\lambda y'+(\lambda^2+1)y=0$, and $y(0)=y'(0)=1$. Evaluate $A$ and $B$ and hence find the equation of the function.</p></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution (a)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Write $y=e^{\lambda x}u$ where $u=A\sin x+B\cos x$, so $u'=A\cos x-B\sin x$ and $u''=-u$.</p>
+<p class="display-math">$$y'=e^{\lambda x}(\lambda u+u')$$</p>
+<p class="display-math">$$y''=e^{\lambda x}\bigl(\lambda^2 u+2\lambda u'+u''\bigr)=e^{\lambda x}(\lambda^2 u+2\lambda u'-u)$$</p>
+<p class="display-math">$$y''-2\lambda y'+(\lambda^2+1)y=e^{\lambda x}\bigl[(\lambda^2 u+2\lambda u'-u)-2\lambda(\lambda u+u')+(\lambda^2+1)u\bigr]=e^{\lambda x}\cdot 0=0$$</p></div></details>
+<details class="solution-block"><summary><span class="solution-label">Solution (b)</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>From (a), $y=e^{\lambda x}(A\sin x+B\cos x)$.</p>
+<p class="display-math">$$y(0)=B=1$$</p>
+<p class="display-math">$$y'(0)=\lambda B+A=1\quad\Rightarrow\quad A+\lambda=1\quad\Rightarrow\quad A=1-\lambda$$</p>
+<p class="display-math">$$y=e^{\lambda x}\bigl[(1-\lambda)\sin x+\cos x\bigr]$$</p>
+<p><strong>Answer:</strong> $A=1-\lambda$, $B=1$, and $y=e^{\lambda x}\bigl[(1-\lambda)\sin x+\cos x\bigr]$.</p></div></details>
+    </main>
+  </div>
+</body>
+</html>

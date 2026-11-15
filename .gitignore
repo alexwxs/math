@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# Scratch / OCR working files (not part of the site)
+_content_dump.txt
+_patch_inspect.py
+scripts/_crop_*.py
+scripts/_extract_*.py
+content/**/_ocr*/
+content/**/_ocr_crops/
+content/**/media/_*.png
+content/**/media/pdf_*.png
+content/year7/media/t3_hw7_*
+public/**/media/_*.png
+public/**/media/pdf_*.png

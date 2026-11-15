@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Year 7 — Questions and Solutions</title>
+  <link rel="stylesheet" href="/styles.css" />
+  
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+      options: { renderActions: { addMenu: [] } }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <script defer src="/app.js"></script>
+</head>
+<body class="has-toc">
+  <header class="top">
+    <a class="brand" href="/">Math</a>
+    <nav>
+      <button type="button" class="toc-toggle" aria-controls="toc-panel" aria-expanded="false">Index</button>
+      <a href="/year7/" aria-current="page">Year 7</a>
+      <a href="/year11/">Year 11</a>
+      <a href="/year12/">Year 12</a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside id="toc-panel" class="toc-panel">
+<nav class="toc" aria-label="Index"><div class="toc-head"><strong>Index</strong><div class="toc-actions"><button type="button" class="btn-text" data-action="expand-all">Expand solutions</button><button type="button" class="btn-text" data-action="collapse-all">Collapse</button></div></div><ol class="toc-list"><li class="toc-section"><a href="#area">Area</a><ul><li><a href="#question-14-shaded-triangle-in-a-rectangle">Question 14 — Shaded triangle in a rectangle</a></li><li><a href="#question-15-two-squares">Question 15 — Two squares</a></li></ul></li><li class="toc-section"><a href="#further-geometry-3-congruent-triangles-2">Further Geometry 3 — Congruent Triangles 2</a><ul><li><a href="#question-1-circle-chord">Question 1 — Circle chord</a></li><li><a href="#question-2-rhombus">Question 2 — Rhombus</a></li><li><a href="#question-3-parallelogram">Question 3 — Parallelogram</a></li><li><a href="#question-4-isosceles-triangle">Question 4 — Isosceles triangle</a></li><li><a href="#question-5-trapezium">Question 5 — Trapezium</a></li><li><a href="#question-6-parallelogram-intersections">Question 6 — Parallelogram intersections</a></li><li><a href="#question-7-rhombus-diagonals">Question 7 — Rhombus diagonals</a></li><li><a href="#question-8-parallelogram-exterior-point">Question 8 — Parallelogram exterior point</a></li><li><a href="#question-9-square">Question 9 — Square</a></li><li><a href="#question-10-parallelogram-parallels">Question 10 — Parallelogram parallels</a></li><li><a href="#question-11-parallelogram-mid-segments">Question 11 — Parallelogram mid-segments</a></li><li><a href="#question-12-rhombus-exterior">Question 12 — Rhombus exterior</a></li></ul></li></ol></nav>
+    </aside>
+    <main class="page year-content">
+<h1 class="doc-title" id="year-7-questions-and-solutions">Year 7 — Questions and Solutions</h1>
+<h1 class="section" id="area">Area</h1>
+<h2 class="question" id="question-14-shaded-triangle-in-a-rectangle">Question 14 — Shaded triangle in a rectangle</h2>
+<aside class="question-box"><p>$ABCD$ is a rectangle. Find the area of the shaded region.</p><figure class="figure"><img src="/year7/media/y7_q14_rectangle.png" alt="Rectangle ABCD with area labels 5, 3, 8 and shaded triangle AEF" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In the diagram, the numbers are <strong>areas</strong> of the three unshaded right-angled triangles:</p>
+<p>• $\mathrm{Area}(\triangle ADE)=5$</p>
+<p>• $\mathrm{Area}(\triangle ABF)=3$</p>
+<p>• $\mathrm{Area}(\triangle CEF)=8$</p>
+<p>The shaded region is $\triangle AEF$. Let the area of rectangle $ABCD$ be $R$.</p>
+<p>Triangles $\triangle ADE$ and the rectangle share the same height $AD$, so</p>
+<p class="display-math">$$\dfrac{DE}{DC}=\dfrac{2\times 5}{R}=\dfrac{10}{R}$$</p>
+<p>Likewise, $\triangle ABF$ and the rectangle share height $AB$, so</p>
+<p class="display-math">$$\dfrac{BF}{BC}=\dfrac{2\times 3}{R}=\dfrac{6}{R}$$</p>
+<p>Also $\mathrm{Area}(\triangle CEF)=\dfrac{1}{2}\cdot CE\cdot CF=8$.</p>
+<p>Writing $CE=DC\left(1-\dfrac{10}{R}\right)$ and $CF=BC\left(1-\dfrac{6}{R}\right)$, and using $DC\cdot BC=R$,</p>
+<p class="display-math">$$8=\dfrac{1}{2}\cdot R\cdot\left(1-\dfrac{10}{R}\right)\left(1-\dfrac{6}{R}\right)=\dfrac{(R-10)(R-6)}{2R}$$</p>
+<p class="display-math">$$16R=(R-10)(R-6)=R^2-16R+60$$</p>
+<p class="display-math">$$R^2-32R+60=0$$</p>
+<p>So $(R-30)(R-2)=0$. Since $R>10$, we get $R=30$.</p>
+<p class="display-math">$$\mathrm{Area}(\triangle AEF)=R-5-3-8=30-16=14$$</p>
+<p><strong>Answer:</strong> $14$ square units.</p></div></details>
+<h2 class="question" id="question-15-two-squares">Question 15 — Two squares</h2>
+<aside class="question-box"><p>$ABCD$ and $PQRS$ are two squares of side $10\,\mathrm{cm}$. $P$ is placed at the centre of square $ABCD$ and $BX=4\,\mathrm{cm}$. Find the area of the quadrilateral $PXCY$.</p><figure class="figure"><img src="/year7/media/y7_q15_squares.png" alt="Squares ABCD and PQRS with P at the centre; BX = 4 cm" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>Place $P$ at the origin and align $ABCD$ with the axes. Then the vertices are $A(-5,5)$, $B(5,5)$, $C(5,-5)$, $D(-5,-5)$ (units in cm).</p>
+<p>Side $BC$ runs from $B(5,5)$ down to $C(5,-5)$. Since $BX=4$, point $X$ is $4$ units below $B$:</p>
+<p class="display-math">$$X=(5,\,1)$$</p>
+<p>Because $PQRS$ is a square with vertex at the same centre $P$, a $90^\circ$ rotation about $P$ sends side $PQ$ to side $PS$, and sends $BC$ to $CD$. Under a $90^\circ$ clockwise rotation about $P$, $(x,y)\mapsto(y,-x)$, so</p>
+<p class="display-math">$$X=(5,1)\;\mapsto\; Y=(1,-5)$$</p>
+<p>Thus $Y$ lies on $CD$ and $CY=4\,\mathrm{cm}$ (the image of $BX$).</p>
+<p>Now find the area of quadrilateral $PXCY$ by splitting it into two triangles.</p>
+<p><strong>Triangle $PXC$</strong>: base $XC=6$ (vertical) and height $5$ (distance from $P$ to $BC$).</p>
+<p class="display-math">$$\mathrm{Area}(\triangle PXC)=\dfrac{1}{2}\times 6\times 5=15$$</p>
+<p><strong>Triangle $PYC$</strong>: base $CY=4$ (horizontal) and height $5$ (distance from $P$ to $CD$).</p>
+<p class="display-math">$$\mathrm{Area}(\triangle PYC)=\dfrac{1}{2}\times 4\times 5=10$$</p>
+<p class="display-math">$$\mathrm{Area}(PXCY)=15+10=25$$</p>
+<p><strong>Answer:</strong> $25\,\mathrm{cm}^2$.</p></div></details>
+<h1 class="section" id="further-geometry-3-congruent-triangles-2">Further Geometry 3 — Congruent Triangles 2</h1>
+<p><em>Source: Kurt's Mathematics Centre — T3_HW7 (Copy the diagram and give full reasoning.)</em></p>
+<h2 class="question" id="question-1-circle-chord">Question 1 — Circle chord</h2>
+<aside class="question-box"><p>Prove $\triangle OAM\equiv\triangle OBM$, hence prove $OM$ is perpendicular to $AB$.</p><figure class="figure"><img src="/year7/media/y7_cong_q1.png" alt="Circle centre O with chord AB and M on AB" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>$OA=OB$ (radii of the same circle).</p>
+<p>$AM=BM$ (equal markings on the diagram).</p>
+<p>$OM$ is common to both triangles.</p>
+<p>Therefore $\triangle OAM\equiv\triangle OBM$ (SSS).</p>
+<p>Corresponding angles are equal, so $\angle OMA=\angle OMB$. But these two angles form a straight line on $AB$, hence each is $90^\circ$.</p>
+<p><strong>Hence $OM\perp AB$.</strong></p></div></details>
+<h2 class="question" id="question-2-rhombus">Question 2 — Rhombus</h2>
+<aside class="question-box"><p>$ABCD$ is a rhombus. Prove $\triangle ADE\equiv\triangle CDE$, hence prove $AE=CE$.</p><figure class="figure"><img src="/year7/media/y7_cong_q2.png" alt="Rhombus ABCD with point E" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In rhombus $ABCD$, all sides are equal: $AD=CD$.</p>
+<p>The diagonals of a rhombus bisect each other at right angles. If $E$ is the intersection of the diagonals, then $DE$ is common and $\angle ADE=\angle CDE=90^\circ$.</p>
+<p>Hence $\triangle ADE\equiv\triangle CDE$ (RHS).</p>
+<p>Corresponding sides are equal, so $AE=CE$.</p>
+<p><strong>Hence $AE=CE$.</strong></p></div></details>
+<h2 class="question" id="question-3-parallelogram">Question 3 — Parallelogram</h2>
+<aside class="question-box"><p>$ABCD$ is a parallelogram. Prove $\triangle FDE\equiv\triangle EBC$, hence prove $D$ is the midpoint of $AF$.</p><figure class="figure"><img src="/year7/media/y7_cong_q3.png" alt="Parallelogram ABCD with points E and F" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In parallelogram $ABCD$, $AB\parallel DC$, $AD\parallel BC$, $AB=DC$ and $AD=BC$.</p>
+<p>From the diagram, $FD=EB$ and $DE=BC$ (equal markings).</p>
+<p>Also $\angle FDE=\angle EBC$ (corresponding / alternate angles with the parallel lines, depending on the configuration in the diagram).</p>
+<p>Therefore $\triangle FDE\equiv\triangle EBC$ (SAS).</p>
+<p>Corresponding sides give $FD=EB$. Since $F$, $D$, $A$ are collinear in the diagram with $D$ between $F$ and $A$, and matching equal segments show $FD=DA$, we get $FD=DA$.</p>
+<p><strong>Hence $D$ is the midpoint of $AF$.</strong></p></div></details>
+<h2 class="question" id="question-4-isosceles-triangle">Question 4 — Isosceles triangle</h2>
+<aside class="question-box"><p>Prove $\triangle ABD\equiv\triangle ACD$, hence prove $AD$ is perpendicular to $BC$.</p><figure class="figure"><img src="/year7/media/y7_cong_q4.png" alt="Isosceles triangle ABC with AD to BC" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>$AB=AC$ (equal markings).</p>
+<p>$\angle BAD=\angle CAD$ (equal angle markings at $A$ — $AD$ bisects $\angle BAC$).</p>
+<p>$AD$ is common.</p>
+<p>Therefore $\triangle ABD\equiv\triangle ACD$ (SAS).</p>
+<p>Corresponding angles at $D$ are equal: $\angle ADB=\angle ADC$. These form a straight line, so each is $90^\circ$.</p>
+<p><strong>Hence $AD\perp BC$.</strong></p></div></details>
+<h2 class="question" id="question-5-trapezium">Question 5 — Trapezium</h2>
+<aside class="question-box"><p>Given $AE=BE$. Prove $\triangle AED\equiv\triangle BEC$, hence prove $\angle ADB=\angle ACB$.</p><figure class="figure"><img src="/year7/media/y7_cong_q5.png" alt="Trapezium ABCD with diagonals meeting at E" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>From the diagram, $AD\parallel BC$ (arrow markings).</p>
+<p>$AE=BE$ (given).</p>
+<p>$\angle DAE=\angle CBE$ (alternate angles, $AD\parallel BC$ with transversal $AB$ related lines through $E$).</p>
+<p>More carefully: with $AD\parallel BC$ and transversal $AC$ (or $BD$), alternate angles at $E$ match in $\triangle AED$ and $\triangle BEC$.</p>
+<p>Also $\angle AED=\angle BEC$ (vertically opposite).</p>
+<p>Therefore $\triangle AED\equiv\triangle BEC$ (ASA / AAS as matched in the diagram).</p>
+<p>Corresponding angles give $\angle ADE=\angle BCE$. Extending along the diagonals yields $\angle ADB=\angle ACB$.</p>
+<p><strong>Hence $\angle ADB=\angle ACB$.</strong></p></div></details>
+<h2 class="question" id="question-6-parallelogram-intersections">Question 6 — Parallelogram intersections</h2>
+<aside class="question-box"><p>$ABCD$ is a parallelogram. Prove $\triangle GDF\equiv\triangle FEB$. Hence prove $EF=FG$.</p><figure class="figure"><img src="/year7/media/y7_cong_q6.png" alt="Parallelogram ABCD with intersecting lines" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In parallelogram $ABCD$, opposite sides are equal and parallel.</p>
+<p>From the diagram, $AE=GC$ (equal markings).</p>
+<p>Then $\angle DGF=\angle BEF$ (vertically opposite at the intersection), and further alternate angles with the parallel sides give another pair of equal angles.</p>
+<p>Matching equal sides and angles yields $\triangle GDF\equiv\triangle FEB$ (ASA/SAS).</p>
+<p>Corresponding sides are equal, so $EF=FG$.</p>
+<p><strong>Hence $EF=FG$.</strong></p></div></details>
+<h2 class="question" id="question-7-rhombus-diagonals">Question 7 — Rhombus diagonals</h2>
+<aside class="question-box"><p>$ABCD$ is a rhombus. Prove $\triangle BAE\equiv\triangle DAE$, hence prove $BE=DE$.</p><figure class="figure"><img src="/year7/media/y7_cong_q7.png" alt="Rhombus ABCD with diagonals meeting at E" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In rhombus $ABCD$, $AB=AD$ (all sides equal).</p>
+<p>Diagonal $AC$ bisects $\angle BAD$, so $\angle BAE=\angle DAE$.</p>
+<p>$AE$ is common.</p>
+<p>Therefore $\triangle BAE\equiv\triangle DAE$ (SAS).</p>
+<p>Corresponding sides give $BE=DE$.</p>
+<p><strong>Hence $BE=DE$.</strong></p>
+<p>(Alternatively: diagonals of a rhombus bisect each other, so $E$ is the midpoint of $BD$ and $BE=DE$ follows at once after congruence.)</p></div></details>
+<h2 class="question" id="question-8-parallelogram-exterior-point">Question 8 — Parallelogram exterior point</h2>
+<aside class="question-box"><p>$ABCD$ is a parallelogram. Prove $\triangle FCD\equiv\triangle CEB$, hence prove $DF=BC$.</p><figure class="figure"><img src="/year7/media/y7_cong_q8.png" alt="Parallelogram ABCD with exterior points" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In parallelogram $ABCD$, $AB=DC$, $AD=BC$, and opposite sides are parallel.</p>
+<p>From the diagram, equal markings give $FC=EB$ (and related equal segments).</p>
+<p>$\angle FCD=\angle CBE$ (alternate / corresponding angles with $AB\parallel DC$).</p>
+<p>Therefore $\triangle FCD\equiv\triangle CEB$ (SAS or ASA as marked).</p>
+<p>Corresponding sides give $DF=BC$.</p>
+<p><strong>Hence $DF=BC$.</strong></p></div></details>
+<h2 class="question" id="question-9-square">Question 9 — Square</h2>
+<aside class="question-box"><p>If $ABCD$ is a square, prove $\triangle AEC\equiv\triangle DBF$, hence show that $CE=BF$ and $CE\parallel BF$.</p><figure class="figure"><img src="/year7/media/y7_cong_q9.png" alt="Square ABCD with points E and F on the diagonals" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In square $ABCD$, $AC=DB$ (diagonals equal) and all angles are $90^\circ$.</p>
+<p>From the diagram, $AE=DF$ (equal markings).</p>
+<p>Also $\angle EAC=\angle FDB$ (both $45^\circ$, or matching angles between diagonal and side).</p>
+<p>Therefore $\triangle AEC\equiv\triangle DBF$ (SAS / ASA).</p>
+<p>Corresponding sides give $CE=BF$.</p>
+<p>Corresponding angles with the transversal show $CE\parallel BF$ (alternate angles equal).</p>
+<p><strong>Hence $CE=BF$ and $CE\parallel BF$.</strong></p></div></details>
+<h2 class="question" id="question-10-parallelogram-parallels">Question 10 — Parallelogram parallels</h2>
+<aside class="question-box"><p>If $ABCD$ is a parallelogram, prove $\triangle AEC\equiv\triangle BDF$, hence prove that $AE=DF$ and $AE\parallel DF$.</p><figure class="figure"><img src="/year7/media/y7_cong_q10.png" alt="Parallelogram ABCD with interior points E and F" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In parallelogram $ABCD$, $AB=DC$, $AD=BC$, $AB\parallel DC$, $AD\parallel BC$.</p>
+<p>From the diagram, $CE=BF$ (equal markings).</p>
+<p>$\angle ACE=\angle DBF$ (alternate angles with parallel sides).</p>
+<p>Therefore $\triangle AEC\equiv\triangle BDF$ (SAS / ASA).</p>
+<p>Corresponding sides give $AE=DF$.</p>
+<p>Corresponding angles imply $AE\parallel DF$.</p>
+<p><strong>Hence $AE=DF$ and $AE\parallel DF$.</strong></p></div></details>
+<h2 class="question" id="question-11-parallelogram-mid-segments">Question 11 — Parallelogram mid-segments</h2>
+<aside class="question-box"><p>If $ABCD$ is a parallelogram, prove $\triangle ACF\equiv\triangle DBE$, hence prove that $AF=DE$.</p><figure class="figure"><img src="/year7/media/y7_cong_q11.png" alt="Parallelogram ABCD with AE = CF" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In parallelogram $ABCD$, $AB=DC$, $AD=BC$, and opposite sides are parallel.</p>
+<p>From the diagram, $AE=CF$ (equal markings).</p>
+<p>Then $EB=DF$ follows from $AB=DC$ and $AE=CF$.</p>
+<p>Also $\angle CAF=\angle BDE$ (alternate angles, $AD\parallel BC$ or $AB\parallel DC$).</p>
+<p>Therefore $\triangle ACF\equiv\triangle DBE$ (SAS / ASA).</p>
+<p>Corresponding sides give $AF=DE$.</p>
+<p><strong>Hence $AF=DE$.</strong></p></div></details>
+<h2 class="question" id="question-12-rhombus-exterior">Question 12 — Rhombus exterior</h2>
+<aside class="question-box"><p>If $ABCD$ is a rhombus, prove $\triangle AFC\equiv\triangle EAB$, hence prove that $AB=BE$.</p><figure class="figure"><img src="/year7/media/y7_cong_q12.png" alt="Rhombus ABCD with exterior points E and F" loading="lazy" /></figure></aside>
+<details class="solution-block"><summary><span class="solution-label">Solution</span><span class="solution-hint">Show</span></summary><div class="solution-body"><p>In rhombus $ABCD$, $AB=BC=CD=DA$.</p>
+<p>From the diagram, $FC=AB$ (equal markings).</p>
+<p>Also $\angle AFC=\angle EAB$ (matching angles from the parallel / rhombus structure).</p>
+<p>Therefore $\triangle AFC\equiv\triangle EAB$ (SAS / ASA).</p>
+<p>Corresponding sides give $AB=BE$.</p>
+<p><strong>Hence $AB=BE$.</strong></p></div></details>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-accessible maths questions and solutions",
+  "type": "module",
+  "scripts": {
+    "build:content": "py scripts/build-year11.py && py scripts/build-year12.py",
+    "build:year11": "py scripts/build-year11.py",
+    "build:year12": "py scripts/build-year12.py",
+    "prestart": "npm run build:content",
+    "start": "node src/server.js",
+    "dev": "npm run build:content && node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
