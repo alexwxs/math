@@ -20,6 +20,7 @@ from log_calculus_2_content import log_calculus_2_blocks  # noqa: E402
 from exp_calculus_1_content import exp_calculus_1_blocks  # noqa: E402
 from exp_calculus_2_content import exp_calculus_2_blocks  # noqa: E402
 from trig_calculus_1_content import trig_calculus_1_blocks  # noqa: E402
+from trig_calculus_2_content import trig_calculus_2_blocks  # noqa: E402
 
 MATH_SCRIPT = """
   <script>
@@ -359,6 +360,7 @@ def main() -> None:
         + exp_calculus_1_blocks()
         + exp_calculus_2_blocks()
         + trig_calculus_1_blocks()
+        + trig_calculus_2_blocks()
     )
     enhanced, toc = enhance_blocks(blocks)
     html = page(
