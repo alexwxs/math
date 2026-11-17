@@ -19,3 +19,7 @@ content/**/media/pdf_*.png
 content/year7/media/t3_hw7_*
 public/**/media/_*.png
 public/**/media/pdf_*.png
+
+# Unused source/scratch diagrams (not referenced by the site)
+**/log1_ex3_q2_diagram.png
+**/y7_q14_source.png
